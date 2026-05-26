@@ -37,3 +37,4 @@ introvoyz041/Medical-Reasoning-SFT-GPT-OSS-120B-V2,medical reasoning SFT,https:/
 starmpcc/Asclepius-Synthetic-Clinical-Notes,clinical note generation,https://huggingface.co/datasets/starmpcc/Asclepius-Synthetic-Clinical-Notes,public repo,158k rows,question-answer + clinical note,high,identified,2
 tchebonenko/MedicalTranscriptions,clinical note generation,https://huggingface.co/datasets/tchebonenko/MedicalTranscriptions,public repo,5k rows,description-to-transcription,medium,identified,2
 openmed-community/MedReason-Stenographic,medical reasoning SFT,https://huggingface.co/datasets/openmed-community/MedReason-Stenographic,public repo,31.5k rows,query-reasoning-answer,high,identified,2
+General-Medical-AI/GMAI-Reasoning10K,medical multimodal reasoning,https://huggingface.co/datasets/General-Medical-AI/GMAI-Reasoning10K,public repo,17k rows,vision-language reasoning,high,identified,2

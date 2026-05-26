@@ -423,3 +423,13 @@ Columns to capture:
 - Why it is useful for SFT: compact reasoning dataset with explicit rationale fields
 - Download status: identified
 - Notes: a very good small supplemental source for reasoning style and explanation behavior.
+
+## 2026-05-26 - General-Medical-AI/GMAI-Reasoning10K
+- Domain: medical multimodal reasoning
+- Source: https://huggingface.co/datasets/General-Medical-AI/GMAI-Reasoning10K
+- License / access constraints: public repo
+- Size: 17k rows
+- Format: vision-language reasoning conversations
+- Why it is useful for SFT: adds multimodal clinical reasoning and explicit step-by-step answers
+- Download status: identified
+- Notes: likely a good small multimodal complement if the image side is preserved in the source path metadata.

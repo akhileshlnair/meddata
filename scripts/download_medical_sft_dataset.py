@@ -21,6 +21,29 @@ def first_present(row: dict[str, Any], keys: tuple[str, ...]) -> Any:
 
 
 def normalize_row(dataset_name: str, row: dict[str, Any]) -> dict[str, Any]:
+    if row.get("conversations"):
+        messages: list[dict[str, Any]] = []
+        for item in row["conversations"]:
+            role = item.get("from")
+            if role == "human":
+                mapped_role = "user"
+            elif role in {"gt", "assistant"}:
+                mapped_role = "assistant"
+            else:
+                mapped_role = role or "user"
+            content = item.get("value") or item.get("content")
+            if content is None:
+                continue
+            if item.get("system") and mapped_role == "user":
+                messages.append({"role": "system", "content": item["system"]})
+            messages.append({"role": mapped_role, "content": content})
+        record: dict[str, Any] = {"source_dataset": dataset_name, "messages": messages}
+        if row.get("image") not in (None, "", [], {}):
+            record["image"] = row["image"]
+        if row.get("id") not in (None, "", [], {}):
+            record["id"] = row["id"]
+        return record
+
     if row.get("query") and (row.get("answer") or row.get("thinking") or row.get("reasoning")):
         record = {
             "source_dataset": dataset_name,
@@ -102,6 +125,7 @@ def normalize_row(dataset_name: str, row: dict[str, Any]) -> dict[str, Any]:
 def main() -> None:
     parser = argparse.ArgumentParser(description="Mirror a SFT-oriented medical dataset.")
     parser.add_argument("--dataset", required=True, help="Hugging Face dataset id.")
+    parser.add_argument("--config", default=None, help="Optional Hugging Face dataset config name.")
     parser.add_argument("--out-dir", required=True, help="Relative output directory for JSONL.")
     parser.add_argument("--split", default="train", help="Dataset split to mirror.")
     parser.add_argument("--limit", type=int, default=None, help="Optional maximum rows to write.")
@@ -112,7 +136,10 @@ def main() -> None:
     out_dir.mkdir(parents=True, exist_ok=True)
     out_path = out_dir / f"{args.dataset.replace('/', '__')}.jsonl"
 
-    stream = load_dataset(args.dataset, split=args.split, streaming=True)
+    if args.config:
+        stream = load_dataset(args.dataset, args.config, split=args.split, streaming=True)
+    else:
+        stream = load_dataset(args.dataset, split=args.split, streaming=True)
     written = 0
     with out_path.open("w", encoding="utf-8") as fh:
         for row in stream:

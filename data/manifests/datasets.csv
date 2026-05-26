@@ -25,3 +25,14 @@ CheXpert,chest x-ray classification,https://stanfordmlgroup.github.io/competitio
 CORD-19,COVID scientific literature,https://arxiv.org/abs/2004.10706,open research dataset,large,papers + metadata,medium,identified,3
 TREC-COVID,biomedical IR,https://arxiv.org/abs/2104.09632,benchmark resources,50 topics and judgments,queries + judgments,medium,identified,3
 BioASQ,biomedical QA and indexing,https://bioasq.org/ and https://participants-area.bioasq.org/,challenge access,cycle-based,multi-task QA/indexing,high,identified,3
+OpenMed/Medical-Reasoning-SFT-Mega,medical reasoning SFT,https://huggingface.co/datasets/OpenMed/Medical-Reasoning-SFT-Mega,public repo,1.79M rows,text generation / QA,very high,identified,1
+Intelligent-Internet/II-Medical-Reasoning-SFT,medical reasoning SFT,https://huggingface.co/datasets/Intelligent-Internet/II-Medical-Reasoning-SFT,public repo,2.2M rows,text generation / QA,very high,identified,1
+drwlf/medra-medical-thinking,medical reasoning and thinking traces,https://huggingface.co/datasets/drwlf/medra-medical-thinking,public repo,2.78M rows,conversational messages,very high,identified,1
+lingshu-medical-mllm/ReasonMed,medical reasoning SFT,https://huggingface.co/datasets/lingshu-medical-mllm/ReasonMed,public repo,1.11M rows,reasoned QA / CoT,very high,identified,1
+FreedomIntelligence/Huatuo26M-Lite,Chinese medical QA,https://huggingface.co/datasets/FreedomIntelligence/Huatuo26M-Lite,public repo,177k rows,question-answer,high,identified,2
+miriad/miriad-5.8M,medical query-response,https://huggingface.co/datasets/miriad/miriad-5.8M,public repo,5.8M rows,text QA with passage context,very high,identified,1
+FreedomIntelligence/huatuo_encyclopedia_qa,Chinese medical QA,https://huggingface.co/datasets/FreedomIntelligence/huatuo_encyclopedia_qa,public repo,362k rows,question-answer,high,identified,2
+meditron-fo-anon/fully-open-meditron,medical reasoning SFT,https://huggingface.co/datasets/meditron-fo-anon/fully-open-meditron,public repo,601k rows,curated messages,very high,identified,1
+introvoyz041/Medical-Reasoning-SFT-GPT-OSS-120B-V2,medical reasoning SFT,https://huggingface.co/datasets/introvoyz041/Medical-Reasoning-SFT-GPT-OSS-120B-V2,public repo,506k rows,reasoned messages,very high,identified,1
+starmpcc/Asclepius-Synthetic-Clinical-Notes,clinical note generation,https://huggingface.co/datasets/starmpcc/Asclepius-Synthetic-Clinical-Notes,public repo,158k rows,question-answer + clinical note,high,identified,2
+tchebonenko/MedicalTranscriptions,clinical note generation,https://huggingface.co/datasets/tchebonenko/MedicalTranscriptions,public repo,5k rows,description-to-transcription,medium,identified,2

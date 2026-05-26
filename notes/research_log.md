@@ -30,4 +30,27 @@
 - Added FreedomIntelligence medical-o1 reasoning shards:
   - English: 19,704 rows
   - Chinese: 20,171 rows
-- Current derived corpus total: 938,074 lines.
+- Current derived corpus total: 7,031,669 lines.
+
+## 2026-05-26 - SFT-first dataset expansion
+- Shifted the collection strategy toward datasets that are actually strong for supervised fine-tuning.
+- New high-value targets identified:
+  - OpenMed/Medical-Reasoning-SFT-Mega
+  - Intelligent-Internet/II-Medical-Reasoning-SFT
+  - drwlf/medra-medical-thinking
+  - lingshu-medical-mllm/ReasonMed
+  - FreedomIntelligence/Huatuo26M-Lite
+  - miriad/miriad-5.8M
+- Added a reusable medical SFT downloader to normalize messages, QA pairs, and raw text fallbacks.
+- Updated the corpus inventory and manifests to track these sources explicitly.
+- Live snapshot while downloads are running:
+  - Current derived corpus total: 10,657,903 lines
+  - II-Medical reasoning mirror: 1,395,743 lines written so far
+  - ReasonMed mirror: 1,111,555 lines written so far
+  - medra-medical-thinking mirror: 2,777,504 lines written so far
+  - MIRIAD mirror: 1,000,000 lines written so far
+  - Huatuo encyclopedia QA mirror: 362,420 lines written so far
+  - Fully Open Meditron mirror: 601,346 lines written so far
+  - GPT-OSS medical reasoning mirror: 506,150 lines written so far
+  - Asclepius synthetic clinical notes: 158,114 lines written so far
+  - MedicalTranscriptions: 4,999 lines written so far

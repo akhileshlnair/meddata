@@ -163,3 +163,27 @@ Format for each entry:
 - Dataset(s): MIRIAD 4.4M and 5.8M variants.
 - Notes: This is a major scaling candidate for the SFT corpus, subject to access and licensing review.
 - Follow-up references: MIRIAD repo and retrieval/data generation pipeline.
+
+## 2026-05-26 - Fully Open Meditron: An Auditable Pipeline for Clinical LLMs
+- Link: https://huggingface.co/datasets/meditron-fo-anon/fully-open-meditron
+- Why it matters: Clinician-vetted medical reasoning corpus with explicit provenance and auditability.
+- Method: Curated OpenAI-style message supervision derived from medical sources.
+- Dataset(s): fully-open-meditron.
+- Notes: Strong fit for supervised tuning because the examples are already conversation-shaped and provenance-rich.
+- Follow-up references: the Meditron paper, provenance tables, and source-dataset audit pipeline.
+
+## 2026-05-26 - Medical-Reasoning-SFT-GPT-OSS-120B-V2
+- Link: https://huggingface.co/datasets/introvoyz041/Medical-Reasoning-SFT-GPT-OSS-120B-V2
+- Why it matters: Reasoned medical question answering with explicit chain-of-thought style supervision.
+- Method: Messages with reasoning content on medical and healthcare questions.
+- Dataset(s): Medical-Reasoning-SFT-GPT-OSS-120B-V2.
+- Notes: A compact but high-value reasoning supplement to the larger medical corpora.
+- Follow-up references: dataset card and generation pipeline details.
+
+## 2026-05-26 - Asclepius Synthetic Clinical Notes
+- Link: https://huggingface.co/datasets/starmpcc/Asclepius-Synthetic-Clinical-Notes
+- Why it matters: Gives note-generation and paraphrase supervision beyond pure QA.
+- Method: Synthetic clinical note generation paired with question/answer style supervision.
+- Dataset(s): Asclepius-Synthetic-Clinical-Notes.
+- Notes: Useful for discharge-summary style writing and clinical paraphrase behavior.
+- Follow-up references: source clinical-note generation pipeline and task templates.

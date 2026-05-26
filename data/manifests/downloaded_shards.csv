@@ -10,3 +10,13 @@ medalpaca/medical_meadow_cord19,data/derived/medical_meadow/medalpaca__medical_m
 medalpaca/medical_meadow_mmmlu,data/derived/medical_meadow/medalpaca__medical_meadow_mmmlu.jsonl,3787,https://huggingface.co/datasets/medalpaca/medical_meadow_mmmlu,downloaded
 FreedomIntelligence/medical-o1-reasoning-SFT:en,data/derived/medical_meadow/FreedomIntelligence__medical-o1-reasoning-SFT__en.jsonl,19704,https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT,downloaded
 FreedomIntelligence/medical-o1-reasoning-SFT:zh,data/derived/medical_meadow/FreedomIntelligence__medical-o1-reasoning-SFT__zh.jsonl,20171,https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT,downloaded
+Intelligent-Internet/II-Medical-Reasoning-SFT,data/derived/ii_medical_reasoning_sft/Intelligent-Internet__II-Medical-Reasoning-SFT.jsonl,799164,https://huggingface.co/datasets/Intelligent-Internet/II-Medical-Reasoning-SFT,partial
+lingshu-medical-mllm/ReasonMed,data/derived/reasonmed/lingshu-medical-mllm__ReasonMed.jsonl,740005,https://huggingface.co/datasets/lingshu-medical-mllm/ReasonMed,partial
+drwlf/medra-medical-thinking,data/derived/medra_medical_thinking/drwlf__medra-medical-thinking.jsonl,1069204,https://huggingface.co/datasets/drwlf/medra-medical-thinking,partial
+OpenMed/Medical-Reasoning-SFT-Mega,data/derived/openmed_medical_reasoning_sft_mega/OpenMed__Medical-Reasoning-SFT-Mega.jsonl,295412,https://huggingface.co/datasets/OpenMed/Medical-Reasoning-SFT-Mega,partial
+miriad/miriad-5.8M,data/derived/miriad_medical_qna/miriad__miriad-5.8M.jsonl,705260,https://huggingface.co/datasets/miriad/miriad-5.8M,partial
+FreedomIntelligence/huatuo_encyclopedia_qa,data/derived/huatuo_encyclopedia_qa/FreedomIntelligence__huatuo_encyclopedia_qa.jsonl,362420,https://huggingface.co/datasets/FreedomIntelligence/huatuo_encyclopedia_qa,downloaded
+meditron-fo-anon/fully-open-meditron,data/derived/fully_open_meditron/meditron-fo-anon__fully-open-meditron.jsonl,601346,https://huggingface.co/datasets/meditron-fo-anon/fully-open-meditron,downloaded
+introvoyz041/Medical-Reasoning-SFT-GPT-OSS-120B-V2,data/derived/gpt_oss_medical_reasoning/introvoyz041__Medical-Reasoning-SFT-GPT-OSS-120B-V2.jsonl,506150,https://huggingface.co/datasets/introvoyz041/Medical-Reasoning-SFT-GPT-OSS-120B-V2,downloaded
+starmpcc/Asclepius-Synthetic-Clinical-Notes,data/derived/asclepius_synthetic_clinical_notes/starmpcc__Asclepius-Synthetic-Clinical-Notes.jsonl,158114,https://huggingface.co/datasets/starmpcc/Asclepius-Synthetic-Clinical-Notes,downloaded
+tchebonenko/MedicalTranscriptions,data/derived/medical_transcriptions/tchebonenko__MedicalTranscriptions.jsonl,4999,https://huggingface.co/datasets/tchebonenko/MedicalTranscriptions,downloaded

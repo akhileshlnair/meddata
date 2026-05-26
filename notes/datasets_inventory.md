@@ -313,3 +313,103 @@ Columns to capture:
 - Why it is useful for SFT: explicit reasoning supervision in a clean instruction format
 - Download status: downloaded
 - Notes: very useful for reasoning-heavy medical assistants; the English and Chinese configs are already mirrored locally.
+
+## 2026-05-26 - OpenMed/Medical-Reasoning-SFT-Mega
+- Domain: medical reasoning SFT
+- Source: https://huggingface.co/datasets/OpenMed/Medical-Reasoning-SFT-Mega
+- License / access constraints: public repo, Apache 2.0
+- Size: 1.79M rows
+- Format: conversational messages with reasoning traces
+- Why it is useful for SFT: high-quality chain-of-thought style medical reasoning with explicit assistant reasoning content
+- Download status: identified
+- Notes: one of the best fits for the current corpus goal.
+
+## 2026-05-26 - Intelligent-Internet/II-Medical-Reasoning-SFT
+- Domain: medical reasoning SFT
+- Source: https://huggingface.co/datasets/Intelligent-Internet/II-Medical-Reasoning-SFT
+- License / access constraints: public repo
+- Size: 2.2M rows
+- Format: conversational messages / parquet
+- Why it is useful for SFT: large-scale medical reasoning and instruction-following supervision
+- Download status: identified
+- Notes: strong candidate for scale and reasoning diversity.
+
+## 2026-05-26 - drwlf/medra-medical-thinking
+- Domain: medical reasoning and thinking traces
+- Source: https://huggingface.co/datasets/drwlf/medra-medical-thinking
+- License / access constraints: public repo
+- Size: 2.78M rows
+- Format: conversational messages
+- Why it is useful for SFT: large conversational medical reasoning corpus with structured dialogs
+- Download status: identified
+- Notes: strong fit for assistant-style tuning and clinical thinking behavior.
+
+## 2026-05-26 - lingshu-medical-mllm/ReasonMed
+- Domain: medical reasoning SFT
+- Source: https://huggingface.co/datasets/lingshu-medical-mllm/ReasonMed
+- License / access constraints: public repo
+- Size: 1.11M rows
+- Format: question-answer pairs with CoT / summarized reasoning
+- Why it is useful for SFT: high-quality generated rationales from multi-agent verification
+- Download status: identified
+- Notes: especially attractive because the card reports higher quality than prior open medical reasoning corpora.
+
+## 2026-05-26 - FreedomIntelligence/Huatuo26M-Lite
+- Domain: Chinese medical QA
+- Source: https://huggingface.co/datasets/FreedomIntelligence/Huatuo26M-Lite
+- License / access constraints: public repo
+- Size: 177,703 rows
+- Format: question-answer
+- Why it is useful for SFT: cleaned and rewritten Chinese medical QA with decent quality control
+- Download status: identified
+- Notes: smaller than the reasoning mega-sets, but still useful and high signal.
+
+## 2026-05-26 - miriad/miriad-5.8M
+- Domain: medical query-response
+- Source: https://huggingface.co/datasets/miriad/miriad-5.8M
+- License / access constraints: public repo, check dataset card
+- Size: 5.8M rows
+- Format: question-answer with supporting paper context
+- Why it is useful for SFT: directly SFT-shaped large-scale medical QA derived from literature
+- Download status: identified
+- Notes: a strong next mirror target after the current reasoning corpora.
+
+## 2026-05-26 - meditron-fo-anon/fully-open-meditron
+- Domain: medical reasoning SFT
+- Source: https://huggingface.co/datasets/meditron-fo-anon/fully-open-meditron
+- License / access constraints: public repo
+- Size: 601k rows
+- Format: curated OpenAI-style messages
+- Why it is useful for SFT: clinician-vetted, provenance-rich supervision with explicit source metadata
+- Download status: identified
+- Notes: high-signal complement to the larger medical reasoning datasets already mirrored.
+
+## 2026-05-26 - introvoyz041/Medical-Reasoning-SFT-GPT-OSS-120B-V2
+- Domain: medical reasoning SFT
+- Source: https://huggingface.co/datasets/introvoyz041/Medical-Reasoning-SFT-GPT-OSS-120B-V2
+- License / access constraints: public repo
+- Size: 506k rows
+- Format: messages with reasoning content
+- Why it is useful for SFT: explicit reasoning supervision on medical and healthcare questions
+- Download status: identified
+- Notes: a compact but high-signal reasoning supplement to the larger mirrors.
+
+## 2026-05-26 - starmpcc/Asclepius-Synthetic-Clinical-Notes
+- Domain: clinical note generation
+- Source: https://huggingface.co/datasets/starmpcc/Asclepius-Synthetic-Clinical-Notes
+- License / access constraints: public repo
+- Size: 158k rows
+- Format: question-answer plus synthetic clinical note
+- Why it is useful for SFT: note rewriting, paraphrasing, and clinical documentation supervision
+- Download status: identified
+- Notes: compact but genuinely useful for medical writing behavior.
+
+## 2026-05-26 - tchebonenko/MedicalTranscriptions
+- Domain: medical note generation
+- Source: https://huggingface.co/datasets/tchebonenko/MedicalTranscriptions
+- License / access constraints: public repo
+- Size: 5k rows
+- Format: description and transcription
+- Why it is useful for SFT: clinical note drafting from patient descriptions
+- Download status: identified
+- Notes: small, but useful as a note-generation supplement and formatting seed.

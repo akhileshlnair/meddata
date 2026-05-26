@@ -2,6 +2,8 @@
 data/raw/
 data/cache/
 data/tmp/
+data/derived/*
+!data/derived/README.md
 *.sqlite
 *.db
 *.tar
@@ -10,4 +12,3 @@ data/tmp/
 *.zst
 *.parquet
 *.jsonl.gz
-

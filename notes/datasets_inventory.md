@@ -723,3 +723,13 @@ Columns to capture:
 - Why it is useful for SFT: large, direct medical QA instruction corpus
 - Download status: downloaded
 - Notes: `all_train` looks like the best split to mirror for SFT purposes; mirrored 72,455 rows.
+
+## 2026-05-26 - OpenMedical/m1-stage1-medical-reasoning:limo-correct
+- Domain: medical reasoning SFT
+- Source: https://huggingface.co/datasets/OpenMedical/m1-stage1-medical-reasoning
+- License / access constraints: public repo
+- Size: 1.6k rows
+- Format: question-answer-reasoning
+- Why it is useful for SFT: compact reasoning traces with explicit answer extraction
+- Download status: downloaded
+- Notes: `limo-correct` looks like the best fit and is the smallest useful config among the remaining OpenMedical reasoning slices; mirrored 1,617 rows.

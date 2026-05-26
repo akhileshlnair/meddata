@@ -533,3 +533,23 @@ Columns to capture:
 - Why it is useful for SFT: large-scale explanatory medical QA if it mirrors cleanly
 - Download status: identified
 - Notes: worth probing with a capped download if the size and disk budget permit.
+
+## 2026-05-26 - alwaysfurther/deepfabric-7k-medical-multi-turn-conversation
+- Domain: medical multi-turn conversation
+- Source: https://huggingface.co/datasets/alwaysfurther/deepfabric-7k-medical-multi-turn-conversation
+- License / access constraints: public repo
+- Size: 7k rows
+- Format: multi-turn conversation
+- Why it is useful for SFT: adds realistic multi-turn medical assistant behavior
+- Download status: identified
+- Notes: high-value compact dialogue set.
+
+## 2026-05-26 - HiTZ/MedExpQA
+- Domain: medical explanation QA
+- Source: https://huggingface.co/datasets/HiTZ/MedExpQA
+- License / access constraints: public repo
+- Size: explanation QA dataset
+- Format: question-answer with explanations
+- Why it is useful for SFT: strong reasoning-and-explanation supervision
+- Download status: identified
+- Notes: especially useful if the explanation field remains clean after normalization.

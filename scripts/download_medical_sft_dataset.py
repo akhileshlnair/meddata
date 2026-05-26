@@ -21,6 +21,31 @@ def first_present(row: dict[str, Any], keys: tuple[str, ...]) -> Any:
 
 
 def normalize_row(dataset_name: str, row: dict[str, Any]) -> dict[str, Any]:
+    if row.get("full_question") and row.get("options"):
+        choices = []
+        if isinstance(row["options"], dict):
+            for key in sorted(row["options"].keys()):
+                choices.append(row["options"][key])
+        answer = row.get("correct_option")
+        if isinstance(answer, int):
+            answer = choices[answer - 1] if 1 <= answer <= len(choices) else answer
+        record = {
+            "source_dataset": dataset_name,
+            "question": row["full_question"],
+            "choices": choices,
+        }
+        if answer not in (None, "", [], {}):
+            record["answer"] = answer
+        if row.get("full_answer") not in (None, "", [], {}):
+            record["full_answer"] = row["full_answer"]
+        if row.get("type") not in (None, "", [], {}):
+            record["type"] = row["type"]
+        if row.get("year") not in (None, "", [], {}):
+            record["year"] = row["year"]
+        if row.get("lang") not in (None, "", [], {}):
+            record["lang"] = row["lang"]
+        return record
+
     if row.get("dataset_info") and row.get("conversations"):
         for convo in row["conversations"]:
             dialogue = convo.get("dialogue") or []
@@ -125,6 +150,25 @@ def normalize_row(dataset_name: str, row: dict[str, Any]) -> dict[str, Any]:
             "question": row["question"],
             "answer": row["response"],
         }
+
+    if row.get("messages") and isinstance(row["messages"], list):
+        messages = []
+        for item in row["messages"]:
+            role = item.get("role")
+            if role not in {"user", "assistant", "system"}:
+                if role in {"patient", "customer", "human"}:
+                    role = "user"
+                elif role in {"agent", "doctor", "gt"}:
+                    role = "assistant"
+            content = item.get("content")
+            if content is None:
+                continue
+            messages.append({"role": role or "user", "content": content})
+        if messages:
+            record: dict[str, Any] = {"source_dataset": dataset_name, "messages": messages}
+            if row.get("id") not in (None, "", [], {}):
+                record["id"] = row["id"]
+            return record
 
     if row.get("conversations"):
         messages: list[dict[str, Any]] = []

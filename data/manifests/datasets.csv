@@ -48,3 +48,5 @@ Kabatubare/medical-guanaco-3000,medical assistant instruction,https://huggingfac
 lavita/medical-qa-shared-task-v1-toy,medical multiple-choice QA,https://huggingface.co/datasets/lavita/medical-qa-shared-task-v1-toy,public repo,64 rows,medical MCQ,medium,identified,2
 ai-training-datasets/medical_helpdesk,medical helpdesk dialogue,https://huggingface.co/datasets/ai-training-datasets/medical_helpdesk,public repo,100 dialogues,customer-agent dialogue,medium,identified,2
 Starlord1010/Medical-QA-dataset,medical QA,https://huggingface.co/datasets/Starlord1010/Medical-QA-dataset,public repo,100K-1M rows,question-response,high,identified,2
+alwaysfurther/deepfabric-7k-medical-multi-turn-conversation,medical multi-turn conversation,https://huggingface.co/datasets/alwaysfurther/deepfabric-7k-medical-multi-turn-conversation,public repo,7k rows,multi-turn conversation,high,identified,2
+HiTZ/MedExpQA,medical explanation QA,https://huggingface.co/datasets/HiTZ/MedExpQA,public repo,explanation QA dataset,question-answer with explanations,high,identified,2

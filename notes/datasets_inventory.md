@@ -413,3 +413,13 @@ Columns to capture:
 - Why it is useful for SFT: clinical note drafting from patient descriptions
 - Download status: identified
 - Notes: small, but useful as a note-generation supplement and formatting seed.
+
+## 2026-05-26 - openmed-community/MedReason-Stenographic
+- Domain: medical reasoning SFT
+- Source: https://huggingface.co/datasets/openmed-community/MedReason-Stenographic
+- License / access constraints: public repo
+- Size: 31.5k rows
+- Format: query, reasoning, answer, thinking
+- Why it is useful for SFT: compact reasoning dataset with explicit rationale fields
+- Download status: identified
+- Notes: a very good small supplemental source for reasoning style and explanation behavior.

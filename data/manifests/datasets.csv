@@ -36,3 +36,4 @@ meditron-fo-anon/fully-open-meditron,medical reasoning SFT,https://huggingface.c
 introvoyz041/Medical-Reasoning-SFT-GPT-OSS-120B-V2,medical reasoning SFT,https://huggingface.co/datasets/introvoyz041/Medical-Reasoning-SFT-GPT-OSS-120B-V2,public repo,506k rows,reasoned messages,very high,identified,1
 starmpcc/Asclepius-Synthetic-Clinical-Notes,clinical note generation,https://huggingface.co/datasets/starmpcc/Asclepius-Synthetic-Clinical-Notes,public repo,158k rows,question-answer + clinical note,high,identified,2
 tchebonenko/MedicalTranscriptions,clinical note generation,https://huggingface.co/datasets/tchebonenko/MedicalTranscriptions,public repo,5k rows,description-to-transcription,medium,identified,2
+openmed-community/MedReason-Stenographic,medical reasoning SFT,https://huggingface.co/datasets/openmed-community/MedReason-Stenographic,public repo,31.5k rows,query-reasoning-answer,high,identified,2

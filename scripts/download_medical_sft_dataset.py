@@ -21,6 +21,20 @@ def first_present(row: dict[str, Any], keys: tuple[str, ...]) -> Any:
 
 
 def normalize_row(dataset_name: str, row: dict[str, Any]) -> dict[str, Any]:
+    if row.get("query") and (row.get("answer") or row.get("thinking") or row.get("reasoning")):
+        record = {
+            "source_dataset": dataset_name,
+            "instruction": row["query"],
+            "answer": row.get("answer"),
+        }
+        if row.get("reasoning") not in (None, "", [], {}):
+            record["reasoning"] = row["reasoning"]
+        if row.get("thinking") not in (None, "", [], {}):
+            record["thinking"] = row["thinking"]
+        if row.get("id_in_dataset") not in (None, "", [], {}):
+            record["id_in_dataset"] = row["id_in_dataset"]
+        return record
+
     if row.get("description") and row.get("transcription"):
         record = {
             "source_dataset": dataset_name,

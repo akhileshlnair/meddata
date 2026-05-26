@@ -20,3 +20,4 @@ meditron-fo-anon/fully-open-meditron,data/derived/fully_open_meditron/meditron-f
 introvoyz041/Medical-Reasoning-SFT-GPT-OSS-120B-V2,data/derived/gpt_oss_medical_reasoning/introvoyz041__Medical-Reasoning-SFT-GPT-OSS-120B-V2.jsonl,506150,https://huggingface.co/datasets/introvoyz041/Medical-Reasoning-SFT-GPT-OSS-120B-V2,downloaded
 starmpcc/Asclepius-Synthetic-Clinical-Notes,data/derived/asclepius_synthetic_clinical_notes/starmpcc__Asclepius-Synthetic-Clinical-Notes.jsonl,158114,https://huggingface.co/datasets/starmpcc/Asclepius-Synthetic-Clinical-Notes,downloaded
 tchebonenko/MedicalTranscriptions,data/derived/medical_transcriptions/tchebonenko__MedicalTranscriptions.jsonl,4999,https://huggingface.co/datasets/tchebonenko/MedicalTranscriptions,downloaded
+openmed-community/MedReason-Stenographic,data/derived/medreason_stenographic/openmed-community__MedReason-Stenographic.jsonl,31535,https://huggingface.co/datasets/openmed-community/MedReason-Stenographic,downloaded

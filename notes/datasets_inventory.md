@@ -553,3 +553,23 @@ Columns to capture:
 - Why it is useful for SFT: strong reasoning-and-explanation supervision
 - Download status: downloaded
 - Notes: especially useful if the explanation field remains clean after normalization; mirrored 434 English train rows.
+
+## 2026-05-26 - casey-martin/MedInstruct
+- Domain: medical instruction tuning
+- Source: https://huggingface.co/datasets/casey-martin/MedInstruct
+- License / access constraints: public repo
+- Size: 52k rows
+- Format: instruction-input-output
+- Why it is useful for SFT: compact instruction set with medical explanations
+- Download status: downloaded
+- Notes: raw repo contains a usable 52K instruction file plus a broken test split wrapper; mirrored 52,002 rows from the raw JSON file.
+
+## 2026-05-26 - OctoMed/MedXpertQA-Text
+- Domain: expert medical reasoning QA
+- Source: https://huggingface.co/datasets/OctoMed/MedXpertQA-Text
+- License / access constraints: public repo
+- Size: 2,450 rows
+- Format: multiple choice QA
+- Why it is useful for SFT: expert-level medical reasoning with clean answer keys
+- Download status: downloaded
+- Notes: text-only test split looks mirrorable and high-signal; mirrored 2,450 rows.

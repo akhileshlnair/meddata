@@ -372,6 +372,12 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Mirror a SFT-oriented medical dataset.")
     parser.add_argument("--dataset", required=True, help="Hugging Face dataset id.")
     parser.add_argument("--config", default=None, help="Optional Hugging Face dataset config name.")
+    parser.add_argument(
+        "--data-files",
+        nargs="+",
+        default=None,
+        help="Optional raw data files to load instead of the dataset builder.",
+    )
     parser.add_argument("--out-dir", required=True, help="Relative output directory for JSONL.")
     parser.add_argument("--split", default="train", help="Dataset split to mirror.")
     parser.add_argument("--limit", type=int, default=None, help="Optional maximum rows to write.")
@@ -382,7 +388,10 @@ def main() -> None:
     out_dir.mkdir(parents=True, exist_ok=True)
     out_path = out_dir / f"{args.dataset.replace('/', '__')}.jsonl"
 
-    if args.config:
+    if args.data_files:
+        data_files = args.data_files[0] if len(args.data_files) == 1 else args.data_files
+        stream = load_dataset("json", data_files=data_files, split=args.split, streaming=True)
+    elif args.config:
         stream = load_dataset(args.dataset, args.config, split=args.split, streaming=True)
     else:
         stream = load_dataset(args.dataset, split=args.split, streaming=True)

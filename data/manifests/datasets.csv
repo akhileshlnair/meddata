@@ -50,3 +50,5 @@ ai-training-datasets/medical_helpdesk,medical helpdesk dialogue,https://huggingf
 Starlord1010/Medical-QA-dataset,medical QA,https://huggingface.co/datasets/Starlord1010/Medical-QA-dataset,public repo,100K-1M rows,question-response,high,identified,2
 alwaysfurther/deepfabric-7k-medical-multi-turn-conversation,medical multi-turn conversation,https://huggingface.co/datasets/alwaysfurther/deepfabric-7k-medical-multi-turn-conversation,public repo,7k rows,multi-turn conversation,high,identified,2
 HiTZ/MedExpQA,medical explanation QA,https://huggingface.co/datasets/HiTZ/MedExpQA,public repo,explanation QA dataset,question-answer with explanations,high,identified,2
+casey-martin/MedInstruct,medical instruction tuning,https://huggingface.co/datasets/casey-martin/MedInstruct,public repo,52k rows,instruction-input-output,high,identified,2
+OctoMed/MedXpertQA-Text,expert medical reasoning QA,https://huggingface.co/datasets/OctoMed/MedXpertQA-Text,public repo,2,450 rows,multiple choice QA,high,identified,2

@@ -123,3 +123,43 @@ Format for each entry:
 - Dataset(s): ECG-QA.
 - Notes: Useful for cardiac reasoning and signal-grounded medical assistance.
 - Follow-up references: ECG-QA repo.
+
+## 2026-05-26 - MedAlpaca -- An Open-Source Collection of Medical Conversational AI Models and Training Data
+- Link: https://arxiv.org/abs/2304.08247
+- Why it matters: One of the strongest open medical SFT collections; broad coverage and directly usable instruction data.
+- Method: Fine-tuning on Medical Meadow style instruction datasets.
+- Dataset(s): Medical Flashcards, Wikidoc, StackExchange Health, ChatDoctor, and others in the Medical Meadow family.
+- Notes: Excellent seed for a large SFT corpus because it already packages multiple medical tasks in instruction format.
+- Follow-up references: Medical Meadow dataset family and downstream fine-tuning scripts.
+
+## 2026-05-26 - ChatDoctor: A Medical Chat Model Fine-Tuned on a Large Language Model Meta-AI (LLaMA) Using Medical Domain Knowledge
+- Link: https://arxiv.org/abs/2303.14070
+- Why it matters: Large patient-doctor dialogue source with practical conversational tuning value.
+- Method: Fine-tuning on 100k patient-doctor dialogues and retrieval augmentation.
+- Dataset(s): 100k patient-doctor dialogues from online medical consultation platform.
+- Notes: Strong source for conversational medical SFT and dialogue style.
+- Follow-up references: online consultation source and retrieval setup.
+
+## 2026-05-26 - MLEC-QA: A Chinese Multi-Choice Biomedical Question Answering Dataset
+- Link: https://aclanthology.org/2021.emnlp-main.698/
+- Why it matters: Large Chinese biomedical QA set that broadens language coverage and domain diversity.
+- Method: Open-domain multi-choice biomedical QA over Chinese medical licensing exam style questions.
+- Dataset(s): 136,236 Chinese multi-choice biomedical questions with multiple subfields.
+- Notes: High-value if multilingual Chinese medical reasoning matters.
+- Follow-up references: retrieval and reader pipeline described in the repo.
+
+## 2026-05-26 - MEDIQA-Chat 2023 and MEDIQA-Sum 2023 shared-task papers
+- Link: https://arxiv.org/abs/2305.02220 and https://arxiv.org/abs/2307.02006
+- Why it matters: Shared-task data for doctor-patient conversation summarization and note generation.
+- Method: Clinical note generation and dialogue-to-record summarization with PLMs and LLMs.
+- Dataset(s): MEDIQA-Chat, MEDIQA-Sum shared-task datasets.
+- Notes: Good source for clinician-facing summarization and documentation workflows.
+- Follow-up references: task organizers and shared-task data release pages.
+
+## 2026-05-26 - MIRIAD: Augmenting LLMs with millions of medical query-response pairs
+- Link: https://arxiv.org/abs/2506.06091
+- Why it matters: Million-scale medical query-response corpus that is directly aligned with the scale target.
+- Method: Operationalized query-response pairs grounded in peer-reviewed literature.
+- Dataset(s): MIRIAD 4.4M and 5.8M variants.
+- Notes: This is a major scaling candidate for the SFT corpus, subject to access and licensing review.
+- Follow-up references: MIRIAD repo and retrieval/data generation pipeline.

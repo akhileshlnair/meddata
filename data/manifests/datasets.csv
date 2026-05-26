@@ -1,0 +1,27 @@
+name,domain,source,access,size,format,sft_value,status,priority
+MedQA,medical exam QA,https://github.com/jind11/MedQA,public repo,12.7k EN / 34.3k ZH / 14.1k TW,QA multiple choice,high,identified,1
+MedMCQA,medical exam QA,https://github.com/medmcqa/medmcqa,public repo,194k+,multiple choice QA,high,identified,1
+PubMedQA,biomedical research QA,https://pubmedqa.github.io/ and https://github.com/pubmedqa/pubmedqa,public repo,1k labeled / 61.2k unlabeled / 211.3k synthetic,context QA,high,identified,1
+HealthSearchQA,consumer medical QA,https://arxiv.org/abs/2212.13138,benchmark materials,"3,173",free-response QA,high,identified,1
+MedDialog-EN/CN,patient-doctor dialogue,https://arxiv.org/abs/2004.03329,source-specific,0.3M EN / 1.1M CN,dialogue,high,identified,1
+MedAlpaca / Medical Meadow,medical instruction tuning,https://arxiv.org/abs/2304.08247 and https://github.com/kbressem/medAlpaca,repo with underlying source checks,~1.5M data points,instruction QA,very high,identified,1
+ChatDoctor,medical dialogue,https://arxiv.org/abs/2303.14070,platform-derived release,100k dialogues,dialogue,high,identified,1
+MIRIAD,medical query-response,https://github.com/eth-medical-ai-lab/MIRIAD,repo release,4.4M / 5.8M,query-response,very high,identified,1
+MLEC-QA,Chinese biomedical QA,https://github.com/Judenpech/MLEC-QA,Google Drive data link via repo,"136,236",multiple choice QA,high,identified,1
+emrQA,clinical QA,https://emrqa.github.io/,build from i2b2 NER resources,1M question-logical forms / 400k+ evidence pairs,clinical QA,high,identified,2
+MedAlign,instruction following on EHRs,https://arxiv.org/abs/2308.14089,DUA / research access,"983 instructions / 303 refs / 276 EHRs",instruction-response,very high,identified,2
+K-QA,real-world medical QA,https://arxiv.org/abs/2401.14493,public benchmark,"1,212",patient Q&A with physician answers,high,identified,2
+MEDIQA-Chat,doctor-patient note generation,https://arxiv.org/abs/2305.02220,shared-task release,shared-task splits,dialogue summarization,high,identified,2
+MEDIQA-Sum,dialogue summarization,https://arxiv.org/abs/2307.02006,shared-task release,shared-task splits,summarization,high,identified,2
+EHRXQA,multimodal EHR QA,https://arxiv.org/abs/2310.18652,repo / derived resources,derived from MIMIC-based sources,multimodal QA,high,identified,2
+SLAKE,medical VQA,https://arxiv.org/abs/2102.09542,website terms,"642 images / 14,028 QA",image QA,high,identified,2
+VQA-Med,radiology VQA,challenge materials,challenge access,thousands of QA pairs,image QA,high,identified,2
+PathVQA,pathology VQA,challenge materials / paper,"source repo / release","32,632 QA / 4,289 images",image QA,high,identified,2
+ECG-QA,ECG QA,https://arxiv.org/abs/2306.15681 and https://github.com/Jwoo5/ecg-qa,repo / data policy,70 templates,signal QA,medium,identified,3
+TM-PATHVQA,spoken pathology QA,https://arxiv.org/abs/2407.11383,repo release,"98,397 spoken QA / 70h audio",spoken multimodal QA,medium,identified,3
+MIMIC-IV,EHR / clinical data,https://physionet.org/content/mimiciv/2.2/,credentialed access,large,structured tables,high,identified,3
+MIMIC-CXR,radiology images + reports,https://physionet.org/content/mimic-cxr/,credentialed access,"377,110 images / 227,835 studies",image+report,high,identified,3
+CheXpert,chest x-ray classification,https://stanfordmlgroup.github.io/competitions/chexpert/,registration required,large,chest x-rays + uncertainty labels,high,identified,3
+CORD-19,COVID scientific literature,https://arxiv.org/abs/2004.10706,open research dataset,large,papers + metadata,medium,identified,3
+TREC-COVID,biomedical IR,https://arxiv.org/abs/2104.09632,benchmark resources,50 topics and judgments,queries + judgments,medium,identified,3
+BioASQ,biomedical QA and indexing,https://bioasq.org/ and https://participants-area.bioasq.org/,challenge access,cycle-based,multi-task QA/indexing,high,identified,3

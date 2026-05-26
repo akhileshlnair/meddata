@@ -243,3 +243,63 @@ Columns to capture:
 - Why it is useful for SFT: multimodal and speech-enabled medical QA
 - Download status: identified
 - Notes: useful for future voice-first clinical assistants.
+
+## 2026-05-26 - Medical Meadow / MedAlpaca
+- Domain: medical conversational instruction data
+- Source: https://arxiv.org/abs/2304.08247 and https://github.com/kbressem/medAlpaca
+- License / access constraints: verify each underlying source dataset
+- Size: roughly 1.5 million data points across multiple tasks
+- Format: instruction-following / Q-A style medical tasks
+- Why it is useful for SFT: one of the best open instruction-tuning corpora in medicine
+- Download status: identified
+- Notes: likely the first source we should actually mirror in derived form.
+
+## 2026-05-26 - ChatDoctor
+- Domain: medical dialogue
+- Source: https://arxiv.org/abs/2303.14070
+- License / access constraints: verify platform source and release terms
+- Size: 100,000 patient-doctor dialogues
+- Format: dialogue turns / medical chat
+- Why it is useful for SFT: conversational medical assistance and dialogue conditioning
+- Download status: identified
+- Notes: strong companion to MedDialog and Medical Meadow.
+
+## 2026-05-26 - MLEC-QA
+- Domain: Chinese biomedical exam QA
+- Source: https://github.com/Judenpech/MLEC-QA
+- License / access constraints: MIT repo with Google Drive data link
+- Size: 136,236 questions
+- Format: multi-choice QA
+- Why it is useful for SFT: high-volume Chinese biomedical reasoning data
+- Download status: identified
+- Notes: useful for multilingual expansion and exam-style medical reasoning.
+
+## 2026-05-26 - MEDIQA-Chat
+- Domain: doctor-patient dialogue summarization and note generation
+- Source: https://arxiv.org/abs/2305.02220
+- License / access constraints: shared-task release / organizer page
+- Size: shared-task data, exact size depends on task split
+- Format: dialogue to clinical note generation
+- Why it is useful for SFT: documentation and summarization supervision
+- Download status: identified
+- Notes: strong fit for clinician note drafting.
+
+## 2026-05-26 - MEDIQA-Sum
+- Domain: patient dialogue summarization
+- Source: https://arxiv.org/abs/2307.02006
+- License / access constraints: shared-task release / organizer page
+- Size: shared-task data, exact size depends on task split
+- Format: dialogue to medical record summarization
+- Why it is useful for SFT: summary generation from conversations
+- Download status: identified
+- Notes: useful for robust medical summarization behavior.
+
+## 2026-05-26 - MIRIAD
+- Domain: million-scale medical query-response
+- Source: https://github.com/eth-medical-ai-lab/MIRIAD
+- License / access constraints: verify repo release and dataset card
+- Size: 4.4M and 5.8M versions
+- Format: query-response pairs grounded in biomedical literature
+- Why it is useful for SFT: one of the highest-scale directly relevant sources for the target corpus
+- Download status: identified
+- Notes: this is a top-priority source for scaling.

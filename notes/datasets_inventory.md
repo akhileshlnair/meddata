@@ -613,3 +613,23 @@ Columns to capture:
 - Why it is useful for SFT: larger clinical case QA set with answer-key supervision
 - Download status: downloaded
 - Notes: MCQ config (`mcqu`) is the promising one for SFT; likely the best open medical choice among the current candidates; mirrored 10,000 `mcqu` train rows plus 5,767 `mcqm` train rows and 4,969 `oeq` test rows.
+
+## 2026-05-26 - OctoMed/MedQA-4options
+- Domain: medical ethics and clinical exam QA
+- Source: https://huggingface.co/datasets/OctoMed/MedQA-4options
+- License / access constraints: public repo
+- Size: 1.3k rows
+- Format: four-option medical exam QA
+- Why it is useful for SFT: compact USMLE-style questions with explicit answers
+- Download status: downloaded
+- Notes: small but high-signal; likely a clean fit for the existing MCQ normalizer; mirrored 1,273 rows.
+
+## 2026-05-26 - raidium/ECN-QA
+- Domain: medical clinical reasoning exam QA
+- Source: https://huggingface.co/datasets/raidium/ECN-QA
+- License / access constraints: public repo
+- Size: 648 rows
+- Format: clinical proposition QA
+- Why it is useful for SFT: reasoning-focused proposition selection with correct-answer markers
+- Download status: downloaded
+- Notes: bilingual exam-style set; English config looks usable and the proposition structure is rich enough to preserve; mirrored 648 English rows.

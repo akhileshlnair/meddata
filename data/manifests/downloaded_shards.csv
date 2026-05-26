@@ -40,3 +40,5 @@ BirdieByte1024/stage1-doctor-patient-chat,data/derived/stage1_doctor_patient_cha
 ANR-MALADES/MediQAl,data/derived/mediqal_mcqu/ANR-MALADES__MediQAl.jsonl,10000,https://huggingface.co/datasets/ANR-MALADES/MediQAl,downloaded
 ANR-MALADES/MediQAl:mcqm,data/derived/mediqal_mcqm/ANR-MALADES__MediQAl.jsonl,5767,https://huggingface.co/datasets/ANR-MALADES/MediQAl,downloaded
 ANR-MALADES/MediQAl:oeq,data/derived/mediqal_oeq/ANR-MALADES__MediQAl.jsonl,4969,https://huggingface.co/datasets/ANR-MALADES/MediQAl,downloaded
+OctoMed/MedQA-4options,data/derived/medqa_4options/OctoMed__MedQA-4options.jsonl,1273,https://huggingface.co/datasets/OctoMed/MedQA-4options,downloaded
+raidium/ECN-QA,data/derived/ecn_qa_english/raidium__ECN-QA.jsonl,648,https://huggingface.co/datasets/raidium/ECN-QA,downloaded

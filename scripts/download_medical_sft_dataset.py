@@ -113,6 +113,44 @@ def normalize_row(dataset_name: str, row: dict[str, Any]) -> dict[str, Any]:
             record["id"] = row["id"]
         return record
 
+    if row.get("enonce") and row.get("propositions"):
+        choices = []
+        answers = []
+        for prop in row["propositions"]:
+            text = prop.get("proposition")
+            if text not in (None, "", [], {}):
+                choices.append(text)
+                if prop.get("correct"):
+                    answers.append(text)
+        record = {
+            "source_dataset": dataset_name,
+            "instruction": row["enonce"],
+            "choices": choices,
+        }
+        if answers:
+            record["answer"] = "\n".join(answers)
+        if row.get("item") not in (None, "", [], {}):
+            record["item"] = row["item"]
+        if row.get("matiere") not in (None, "", [], {}):
+            record["matiere"] = row["matiere"]
+        if row.get("type") not in (None, "", [], {}):
+            record["type"] = row["type"]
+        if row.get("_id") not in (None, "", [], {}):
+            record["id"] = row["_id"]
+        return record
+
+    if row.get("question") and row.get("options") and row.get("answer"):
+        choices = row["options"] if isinstance(row["options"], list) else []
+        record = {
+            "source_dataset": dataset_name,
+            "instruction": row["question"],
+            "choices": choices,
+            "answer": row["answer"],
+        }
+        if row.get("responses") not in (None, "", [], {}):
+            record["responses"] = row["responses"]
+        return record
+
     if row.get("dataset_info") and row.get("conversations"):
         for convo in row["conversations"]:
             dialogue = convo.get("dialogue") or []

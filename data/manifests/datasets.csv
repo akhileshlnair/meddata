@@ -62,3 +62,5 @@ Fadil369/medical-o1-reasoning-SFT:en,medical reasoning SFT,https://huggingface.c
 Fadil369/medical-o1-reasoning-SFT:en_mix,medical reasoning SFT,https://huggingface.co/datasets/Fadil369/medical-o1-reasoning-SFT,public repo,24.9k rows,question-chain-of-thought-answer,very high,identified,1
 Fadil369/medical-o1-reasoning-SFT:zh,medical reasoning SFT,https://huggingface.co/datasets/Fadil369/medical-o1-reasoning-SFT,public repo,20.2k rows,question-chain-of-thought-answer,very high,identified,1
 Fadil369/medical-o1-reasoning-SFT:zh_mix,medical reasoning SFT,https://huggingface.co/datasets/Fadil369/medical-o1-reasoning-SFT,public repo,25.4k rows,question-chain-of-thought-answer,very high,identified,1
+OpenMedical/medical-raw:medqa,medical exam QA,https://huggingface.co/datasets/OpenMedical/medical-raw,public repo,10.7k rows,nested MCQ with context,high,identified,2
+petkopetkov/medical-question-answering-split,medical QA instruction dataset,https://huggingface.co/datasets/petkopetkov/medical-question-answering-split,public repo,72.5k rows,instruction-input-output,high,identified,2

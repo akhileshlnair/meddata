@@ -44,3 +44,7 @@ OctoMed/MedQA-4options,data/derived/medqa_4options/OctoMed__MedQA-4options.jsonl
 raidium/ECN-QA,data/derived/ecn_qa_english/raidium__ECN-QA.jsonl,648,https://huggingface.co/datasets/raidium/ECN-QA,downloaded
 Fadil369/medical-o1-reasoning-SFT:en,data/derived/medical_o1_reasoning_en/Fadil369__medical-o1-reasoning-SFT.jsonl,19704,https://huggingface.co/datasets/Fadil369/medical-o1-reasoning-SFT,downloaded
 Fadil369/medical-o1-reasoning-SFT:en_mix,data/derived/medical_o1_reasoning_en_mix/Fadil369__medical-o1-reasoning-SFT.jsonl,24887,https://huggingface.co/datasets/Fadil369/medical-o1-reasoning-SFT,downloaded
+OpenMedical/medical-raw:medqa,data/derived/openmedical_medical_raw_medqa/OpenMedical__medical-raw.jsonl,10718,https://huggingface.co/datasets/OpenMedical/medical-raw,downloaded
+OpenMedical/medical-raw:medmcqa,data/derived/openmedical_medical_raw_medmcqa/OpenMedical__medical-raw.jsonl,4871,https://huggingface.co/datasets/OpenMedical/medical-raw,downloaded
+OpenMedical/medical-raw:medbullets_5op,data/derived/openmedical_medical_raw_medbullets_5op/OpenMedical__medical-raw.jsonl,308,https://huggingface.co/datasets/OpenMedical/medical-raw,downloaded
+OpenMedical/medical-raw:medexqa,data/derived/openmedical_medical_raw_medexqa/OpenMedical__medical-raw.jsonl,965,https://huggingface.co/datasets/OpenMedical/medical-raw,downloaded

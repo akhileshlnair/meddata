@@ -673,3 +673,53 @@ Columns to capture:
 - Why it is useful for SFT: larger Chinese-mixed reasoning slice with the same clean schema
 - Download status: identified
 - Notes: clean `Question` / `Complex_CoT` / `Response` schema.
+
+## 2026-05-26 - OpenMedical/medical-raw:medqa
+- Domain: medical exam QA
+- Source: https://huggingface.co/datasets/OpenMedical/medical-raw
+- License / access constraints: public repo
+- Size: 10.7k rows
+- Format: nested MCQ with context
+- Why it is useful for SFT: context-rich MCQ data with explicit answer fields
+- Download status: downloaded
+- Notes: the MedQA config is the cleanest fit for SFT among the available OpenMedical variants; mirrored 10,718 rows.
+
+## 2026-05-26 - OpenMedical/medical-raw:medmcqa
+- Domain: medical exam QA
+- Source: https://huggingface.co/datasets/OpenMedical/medical-raw
+- License / access constraints: public repo
+- Size: 4.9k rows
+- Format: nested MCQ with context
+- Why it is useful for SFT: concise multiple-choice clinical reasoning data
+- Download status: downloaded
+- Notes: mirrored 4,871 rows.
+
+## 2026-05-26 - OpenMedical/medical-raw:medbullets_5op
+- Domain: medical exam QA
+- Source: https://huggingface.co/datasets/OpenMedical/medical-raw
+- License / access constraints: public repo
+- Size: 308 rows
+- Format: nested MCQ with context
+- Why it is useful for SFT: tiny but high-signal Step-style exam items
+- Download status: downloaded
+- Notes: mirrored 308 rows.
+
+## 2026-05-26 - OpenMedical/medical-raw:medexqa
+- Domain: medical exam QA
+- Source: https://huggingface.co/datasets/OpenMedical/medical-raw
+- License / access constraints: public repo
+- Size: 965 rows
+- Format: nested MCQ with context and explanations
+- Why it is useful for SFT: compact exam QA with explanations
+- Download status: downloaded
+- Notes: mirrored 965 rows.
+
+## 2026-05-26 - petkopetkov/medical-question-answering-split
+- Domain: medical QA instruction dataset
+- Source: https://huggingface.co/datasets/petkopetkov/medical-question-answering-split
+- License / access constraints: public repo
+- Size: 72.5k rows
+- Format: instruction-input-output
+- Why it is useful for SFT: large, direct medical QA instruction corpus
+- Download status: identified
+- Notes: `all_train` looks like the best split to mirror for SFT purposes.

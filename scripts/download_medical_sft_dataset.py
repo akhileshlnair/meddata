@@ -151,6 +151,38 @@ def normalize_row(dataset_name: str, row: dict[str, Any]) -> dict[str, Any]:
             record["responses"] = row["responses"]
         return record
 
+    if row.get("Question_formatted") and row.get("Options"):
+        choices = []
+        if isinstance(row["Options"], dict):
+            for key in sorted(row["Options"].keys()):
+                value = row["Options"][key]
+                if value not in (None, "", [], {}):
+                    choices.append(f"{key}: {value}")
+        answer = row.get("Final_answer")
+        if isinstance(answer, str) and answer:
+            answer = answer.strip()
+        if isinstance(row.get("data"), dict):
+            data = row["data"]
+            if isinstance(data.get("Correct Answer"), str) and data["Correct Answer"]:
+                answer = data["Correct Answer"]
+            elif isinstance(data.get("Correct Option"), str) and data["Correct Option"]:
+                opt = data["Correct Option"].strip().upper()
+                mapped = data.get("Options", {}).get(opt) if isinstance(data.get("Options"), dict) else None
+                if mapped not in (None, "", [], {}):
+                    answer = f"{opt}: {mapped}"
+        record = {
+            "source_dataset": dataset_name,
+            "instruction": f"{row.get('Context', '')}\n\n{row['Question_formatted']}".strip(),
+            "choices": choices,
+        }
+        if answer not in (None, "", [], {}):
+            record["answer"] = answer
+        if row.get("subject_name") not in (None, "", [], {}):
+            record["subject_name"] = row["subject_name"]
+        if row.get("id") not in (None, "", [], {}):
+            record["id"] = row["id"]
+        return record
+
     if row.get("dataset_info") and row.get("conversations"):
         for convo in row["conversations"]:
             dialogue = convo.get("dialogue") or []

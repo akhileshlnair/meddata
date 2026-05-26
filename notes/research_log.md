@@ -44,7 +44,7 @@
 - Added a reusable medical SFT downloader to normalize messages, QA pairs, and raw text fallbacks.
 - Updated the corpus inventory and manifests to track these sources explicitly.
 - Live snapshot while downloads are running:
-  - Current derived corpus total: 11,178,257 lines
+  - Current derived corpus total: 11,267,574 lines
   - II-Medical reasoning mirror: 1,395,743 lines written so far
   - ReasonMed mirror: 1,111,555 lines written so far
   - medra-medical-thinking mirror: 2,777,504 lines written so far
@@ -78,3 +78,7 @@
   - ECN-QA English mirror: 648 lines written so far
   - medical-o1 reasoning en mirror: 19,704 lines written so far
   - medical-o1 reasoning en_mix mirror: 24,887 lines written so far
+  - OpenMedical medical-raw medqa mirror: 10,718 lines written so far
+  - OpenMedical medical-raw medmcqa mirror: 4,871 lines written so far
+  - OpenMedical medical-raw medbullets_5op mirror: 308 lines written so far
+  - OpenMedical medical-raw medexqa mirror: 965 lines written so far

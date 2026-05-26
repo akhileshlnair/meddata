@@ -8,3 +8,5 @@ medalpaca/medical_meadow_pubmed_causal,data/derived/medical_meadow/medalpaca__me
 medalpaca/medical_meadow_health_advice,data/derived/medical_meadow/medalpaca__medical_meadow_health_advice.jsonl,8676,https://huggingface.co/datasets/medalpaca/medical_meadow_health_advice,downloaded
 medalpaca/medical_meadow_cord19,data/derived/medical_meadow/medalpaca__medical_meadow_cord19.jsonl,821007,https://huggingface.co/datasets/medalpaca/medical_meadow_cord19,downloaded
 medalpaca/medical_meadow_mmmlu,data/derived/medical_meadow/medalpaca__medical_meadow_mmmlu.jsonl,3787,https://huggingface.co/datasets/medalpaca/medical_meadow_mmmlu,downloaded
+FreedomIntelligence/medical-o1-reasoning-SFT:en,data/derived/medical_meadow/FreedomIntelligence__medical-o1-reasoning-SFT__en.jsonl,19704,https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT,downloaded
+FreedomIntelligence/medical-o1-reasoning-SFT:zh,data/derived/medical_meadow/FreedomIntelligence__medical-o1-reasoning-SFT__zh.jsonl,20171,https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT,downloaded

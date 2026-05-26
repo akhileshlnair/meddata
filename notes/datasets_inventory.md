@@ -303,3 +303,13 @@ Columns to capture:
 - Why it is useful for SFT: one of the highest-scale directly relevant sources for the target corpus
 - Download status: identified
 - Notes: this is a top-priority source for scaling.
+
+## 2026-05-26 - medical-o1-reasoning-SFT
+- Domain: medical reasoning SFT
+- Source: https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT
+- License / access constraints: Hugging Face dataset terms
+- Size: 19,704 English; 20,171 Chinese
+- Format: question / complex chain-of-thought / response
+- Why it is useful for SFT: explicit reasoning supervision in a clean instruction format
+- Download status: downloaded
+- Notes: very useful for reasoning-heavy medical assistants; the English and Chinese configs are already mirrored locally.

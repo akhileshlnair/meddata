@@ -27,4 +27,7 @@
   - Health Advice: 8,676 rows
   - CORD-19: 821,007 rows
   - MMMLU: 3,787 rows
-- Current derived corpus total: 898,199 lines.
+- Added FreedomIntelligence medical-o1 reasoning shards:
+  - English: 19,704 rows
+  - Chinese: 20,171 rows
+- Current derived corpus total: 938,074 lines.

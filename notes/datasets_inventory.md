@@ -433,3 +433,33 @@ Columns to capture:
 - Why it is useful for SFT: adds multimodal clinical reasoning and explicit step-by-step answers
 - Download status: identified
 - Notes: likely a good small multimodal complement if the image side is preserved in the source path metadata.
+
+## 2026-05-26 - lavita/MedQuAD
+- Domain: medical QA
+- Source: https://huggingface.co/datasets/lavita/MedQuAD
+- License / access constraints: public repo
+- Size: 47.4k rows
+- Format: question-answer with ontology metadata
+- Why it is useful for SFT: concise medical QA with source and concept metadata for grounding
+- Download status: identified
+- Notes: a compact but genuinely useful QA supplement with medical ontology hints.
+
+## 2026-05-26 - DataFog/medical-transcription-instruct
+- Domain: medical transcription instruction
+- Source: https://huggingface.co/datasets/DataFog/medical-transcription-instruct
+- License / access constraints: public repo
+- Size: 38,924 rows
+- Format: instruction-output transcription
+- Why it is useful for SFT: stronger and more standardized clinical writing supervision than plain transcription alone
+- Download status: identified
+- Notes: a very good compact source for instruction-following and note drafting.
+
+## 2026-05-26 - swj0419/qa-pairs-mvd-10k_split1
+- Domain: medical medication QA
+- Source: https://huggingface.co/datasets/swj0419/qa-pairs-mvd-10k_split1
+- License / access constraints: public repo
+- Size: 10k rows
+- Format: question pair and label
+- Why it is useful for SFT: can be converted into grounded medication-QA and response-selection supervision
+- Download status: identified
+- Notes: not pure QA, but likely useful as a small supervised pairwise data source.

@@ -38,3 +38,6 @@ starmpcc/Asclepius-Synthetic-Clinical-Notes,clinical note generation,https://hug
 tchebonenko/MedicalTranscriptions,clinical note generation,https://huggingface.co/datasets/tchebonenko/MedicalTranscriptions,public repo,5k rows,description-to-transcription,medium,identified,2
 openmed-community/MedReason-Stenographic,medical reasoning SFT,https://huggingface.co/datasets/openmed-community/MedReason-Stenographic,public repo,31.5k rows,query-reasoning-answer,high,identified,2
 General-Medical-AI/GMAI-Reasoning10K,medical multimodal reasoning,https://huggingface.co/datasets/General-Medical-AI/GMAI-Reasoning10K,public repo,17k rows,vision-language reasoning,high,identified,2
+lavita/MedQuAD,medical QA,https://huggingface.co/datasets/lavita/MedQuAD,public repo,47.4k rows,question-answer with ontology metadata,high,identified,2
+DataFog/medical-transcription-instruct,medical transcription instruction,https://huggingface.co/datasets/DataFog/medical-transcription-instruct,public repo,38,924 rows,instruction-output transcription,high,identified,2
+swj0419/qa-pairs-mvd-10k_split1,medical medication QA,https://huggingface.co/datasets/swj0419/qa-pairs-mvd-10k_split1,public repo,10k rows,question pair label,medium,identified,2

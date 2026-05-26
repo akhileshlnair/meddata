@@ -21,6 +21,44 @@ def first_present(row: dict[str, Any], keys: tuple[str, ...]) -> Any:
 
 
 def normalize_row(dataset_name: str, row: dict[str, Any]) -> dict[str, Any]:
+    if row.get("prompt") and (row.get("completion") or row.get("answer_idx")):
+        record = {
+            "source_dataset": dataset_name,
+            "instruction": row["prompt"],
+        }
+        if row.get("completion") not in (None, "", [], {}):
+            record["answer"] = row["completion"]
+        if row.get("prompt_type") not in (None, "", [], {}):
+            record["prompt_type"] = row["prompt_type"]
+        if row.get("answer_idx") not in (None, "", [], {}):
+            record["answer_idx"] = row["answer_idx"]
+        if row.get("choices") not in (None, "", [], {}):
+            record["choices"] = row["choices"]
+        if row.get("id") not in (None, "", [], {}):
+            record["id"] = row["id"]
+        return record
+
+    if row.get("question") and row.get("answer") and row.get("document_source"):
+        record = {
+            "source_dataset": dataset_name,
+            "question": row["question"],
+            "answer": row["answer"],
+        }
+        for key in (
+            "document_source",
+            "document_url",
+            "category",
+            "umls_cui",
+            "umls_semantic_types",
+            "umls_semantic_group",
+            "question_focus",
+            "question_type",
+            "synonyms",
+        ):
+            if row.get(key) not in (None, "", [], {}):
+                record[key] = row[key]
+        return record
+
     if row.get("conversations"):
         messages: list[dict[str, Any]] = []
         for item in row["conversations"]:
@@ -64,7 +102,27 @@ def normalize_row(dataset_name: str, row: dict[str, Any]) -> dict[str, Any]:
             "instruction": row["description"],
             "answer": row["transcription"],
         }
-        for key in ("medical_specialty", "sample_name", "keywords"):
+        for key in ("medical_specialty", "sample_name", "keywords", "derived_keywords", "transcription_length", "normalized_length", "complexity_score"):
+            if row.get(key) not in (None, "", [], {}):
+                record[key] = row[key]
+        return record
+
+    if row.get("instruction") and row.get("task_output"):
+        record = {
+            "source_dataset": dataset_name,
+            "instruction": row["instruction"],
+            "answer": row["task_output"],
+        }
+        for key in (
+            "description",
+            "medical_specialty",
+            "sample_name",
+            "keywords",
+            "derived_keywords",
+            "transcription_length",
+            "normalized_length",
+            "complexity_score",
+        ):
             if row.get(key) not in (None, "", [], {}):
                 record[key] = row[key]
         return record

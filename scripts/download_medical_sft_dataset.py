@@ -446,6 +446,40 @@ def normalize_row(dataset_name: str, row: dict[str, Any]) -> dict[str, Any]:
                 record[key] = row[key]
         return record
 
+    if row.get("Context") and row.get("Response"):
+        record = {
+            "source_dataset": dataset_name,
+            "instruction": row["Context"],
+            "answer": row["Response"],
+        }
+        return record
+
+    if row.get("user_question") and row.get("assistant_answer"):
+        record = {
+            "source_dataset": dataset_name,
+            "instruction": row["user_question"],
+            "answer": row["assistant_answer"],
+        }
+        for key in ("topic", "to_doctor", "prompt"):
+            if row.get(key) not in (None, "", [], {}):
+                record[key] = row[key]
+        return record
+
+    if row.get("question_1") and row.get("question_2") and row.get("label") in (0, 1):
+        record = {
+            "source_dataset": dataset_name,
+            "instruction": (
+                "Determine whether the following two medical questions ask the same thing.\n"
+                f"Question 1: {row['question_1']}\n"
+                f"Question 2: {row['question_2']}"
+            ),
+            "answer": "Yes" if row["label"] == 1 else "No",
+            "label": row["label"],
+        }
+        if row.get("dr_id") not in (None, "", [], {}):
+            record["dr_id"] = row["dr_id"]
+        return record
+
     question = first_present(row, ("question", "problem", "prompt", "instruction"))
     answer = first_present(row, ("answer", "response", "output", "Complex_CoT", "text"))
 

@@ -44,6 +44,11 @@ OctoMed/MedQA-4options,data/derived/medqa_4options/OctoMed__MedQA-4options.jsonl
 raidium/ECN-QA,data/derived/ecn_qa_english/raidium__ECN-QA.jsonl,648,https://huggingface.co/datasets/raidium/ECN-QA,downloaded
 Fadil369/medical-o1-reasoning-SFT:en,data/derived/medical_o1_reasoning_en/Fadil369__medical-o1-reasoning-SFT.jsonl,19704,https://huggingface.co/datasets/Fadil369/medical-o1-reasoning-SFT,downloaded
 Fadil369/medical-o1-reasoning-SFT:en_mix,data/derived/medical_o1_reasoning_en_mix/Fadil369__medical-o1-reasoning-SFT.jsonl,24887,https://huggingface.co/datasets/Fadil369/medical-o1-reasoning-SFT,downloaded
+Fadil369/medical-o1-reasoning-SFT:zh,data/derived/medical_o1_reasoning_zh/Fadil369__medical-o1-reasoning-SFT.jsonl,20171,https://huggingface.co/datasets/Fadil369/medical-o1-reasoning-SFT,downloaded
+Fadil369/medical-o1-reasoning-SFT:zh_mix,data/derived/medical_o1_reasoning_zh_mix/Fadil369__medical-o1-reasoning-SFT.jsonl,25358,https://huggingface.co/datasets/Fadil369/medical-o1-reasoning-SFT,downloaded
+Amod/mental_health_counseling_conversations,data/derived/mental_health_counseling_conversations/Amod__mental_health_counseling_conversations.jsonl,3512,https://huggingface.co/datasets/Amod/mental_health_counseling_conversations,downloaded
+curaihealth/medical_questions_pairs,data/derived/medical_questions_pairs/curaihealth__medical_questions_pairs.jsonl,3048,https://huggingface.co/datasets/curaihealth/medical_questions_pairs,downloaded
+Mykes/rus_med_dialogues_qa,data/derived/rus_med_dialogues_qa/Mykes__rus_med_dialogues_qa.jsonl,3546,https://huggingface.co/datasets/Mykes/rus_med_dialogues_qa,downloaded
 OpenMedical/medical-raw:medqa,data/derived/openmedical_medical_raw_medqa/OpenMedical__medical-raw.jsonl,10718,https://huggingface.co/datasets/OpenMedical/medical-raw,downloaded
 OpenMedical/medical-raw:medmcqa,data/derived/openmedical_medical_raw_medmcqa/OpenMedical__medical-raw.jsonl,4871,https://huggingface.co/datasets/OpenMedical/medical-raw,downloaded
 OpenMedical/medical-raw:medbullets_5op,data/derived/openmedical_medical_raw_medbullets_5op/OpenMedical__medical-raw.jsonl,308,https://huggingface.co/datasets/OpenMedical/medical-raw,downloaded

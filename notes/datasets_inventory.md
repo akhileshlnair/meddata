@@ -391,8 +391,8 @@ Columns to capture:
 - Size: 506k rows
 - Format: messages with reasoning content
 - Why it is useful for SFT: explicit reasoning supervision on medical and healthcare questions
-- Download status: identified
-- Notes: a compact but high-signal reasoning supplement to the larger mirrors.
+- Download status: downloaded
+- Notes: a compact but high-signal reasoning supplement to the larger mirrors; mirrored locally in en, en_mix, zh, and zh_mix.
 
 ## 2026-05-26 - starmpcc/Asclepius-Synthetic-Clinical-Notes
 - Domain: clinical note generation
@@ -661,8 +661,8 @@ Columns to capture:
 - Size: 20.2k rows
 - Format: question-chain-of-thought-answer
 - Why it is useful for SFT: Chinese medical reasoning with high-quality rationales
-- Download status: identified
-- Notes: clean `Question` / `Complex_CoT` / `Response` schema.
+- Download status: downloaded
+- Notes: clean `Question` / `Complex_CoT` / `Response` schema; mirrored 20,171 rows.
 
 ## 2026-05-26 - Fadil369/medical-o1-reasoning-SFT:zh_mix
 - Domain: medical reasoning SFT
@@ -671,8 +671,38 @@ Columns to capture:
 - Size: 25.4k rows
 - Format: question-chain-of-thought-answer
 - Why it is useful for SFT: larger Chinese-mixed reasoning slice with the same clean schema
-- Download status: identified
-- Notes: clean `Question` / `Complex_CoT` / `Response` schema.
+- Download status: downloaded
+- Notes: clean `Question` / `Complex_CoT` / `Response` schema; mirrored 25,358 rows.
+
+## 2026-05-26 - Amod/mental_health_counseling_conversations
+- Domain: mental health counseling
+- Source: https://huggingface.co/datasets/Amod/mental_health_counseling_conversations
+- License / access constraints: public repo
+- Size: 3,512 rows
+- Format: context-response
+- Why it is useful for SFT: supportive counseling style and crisis-aware response supervision
+- Download status: downloaded
+- Notes: medically adjacent rather than strictly somatic, but useful for conversational tone and empathic response behavior.
+
+## 2026-05-26 - curaihealth/medical_questions_pairs
+- Domain: medical question pair classification
+- Source: https://huggingface.co/datasets/curaihealth/medical_questions_pairs
+- License / access constraints: public repo
+- Size: 3,048 rows
+- Format: paired questions with labels
+- Why it is useful for SFT: paraphrase and duplicate-question training, plus judge/reranker supervision
+- Download status: downloaded
+- Notes: useful for question normalization and medical paraphrase judgment.
+
+## 2026-05-26 - Mykes/rus_med_dialogues_qa
+- Domain: Russian medical dialogue QA
+- Source: https://huggingface.co/datasets/Mykes/rus_med_dialogues_qa
+- License / access constraints: public repo
+- Size: 3,941 rows
+- Format: user-question and assistant-answer dialogue pairs
+- Why it is useful for SFT: multilingual patient-facing support with explicit specialty metadata
+- Download status: downloaded
+- Notes: compact but good for Russian-language medical support responses.
 
 ## 2026-05-26 - OpenMedical/medical-raw:medqa
 - Domain: medical exam QA

@@ -52,3 +52,6 @@ alwaysfurther/deepfabric-7k-medical-multi-turn-conversation,medical multi-turn c
 HiTZ/MedExpQA,medical explanation QA,https://huggingface.co/datasets/HiTZ/MedExpQA,public repo,explanation QA dataset,question-answer with explanations,high,identified,2
 casey-martin/MedInstruct,medical instruction tuning,https://huggingface.co/datasets/casey-martin/MedInstruct,public repo,52k rows,instruction-input-output,high,identified,2
 OctoMed/MedXpertQA-Text,expert medical reasoning QA,https://huggingface.co/datasets/OctoMed/MedXpertQA-Text,public repo,2,450 rows,multiple choice QA,high,identified,2
+huzaifa525/Medical_Intelligence_Dataset_76k_2026_Edition,medical intelligence QA,https://huggingface.co/datasets/huzaifa525/Medical_Intelligence_Dataset_76k_2026_Edition,public repo,76k rows,input-output QA,high,identified,2
+nuhmanpk/firstaid-treatment-instruct,medical first-aid instruction,https://huggingface.co/datasets/nuhmanpk/firstaid-treatment-instruct,public repo,71k rows,system-user-assistant messages,medium,identified,2
+BirdieByte1024/stage1-doctor-patient-chat,medical doctor-patient chat,https://huggingface.co/datasets/BirdieByte1024/stage1-doctor-patient-chat,public repo,482 rows,instruction-response chat,medium,identified,2

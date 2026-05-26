@@ -342,6 +342,16 @@ def normalize_row(dataset_name: str, row: dict[str, Any]) -> dict[str, Any]:
             record["input"] = row["input"]
         return record
 
+    if row.get("input") and row.get("output"):
+        record = {
+            "source_dataset": dataset_name,
+            "instruction": row["input"],
+            "answer": row["output"],
+        }
+        if row.get("source") not in (None, "", [], {}):
+            record["source"] = row["source"]
+        return record
+
     if isinstance(row.get("text"), str) and "### Human:" in row["text"] and "### Assistant:" in row["text"]:
         text = row["text"]
         human_marker = "### Human:"

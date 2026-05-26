@@ -34,3 +34,6 @@ alwaysfurther/deepfabric-7k-medical-multi-turn-conversation,data/derived/deepfab
 HiTZ/MedExpQA,data/derived/medexpqa_en/HiTZ__MedExpQA.jsonl,434,https://huggingface.co/datasets/HiTZ/MedExpQA,downloaded
 casey-martin/MedInstruct,data/derived/medinstruct/casey-martin__MedInstruct.jsonl,52002,https://huggingface.co/datasets/casey-martin/MedInstruct,downloaded
 OctoMed/MedXpertQA-Text,data/derived/medxpertqa_text/OctoMed__MedXpertQA-Text.jsonl,2450,https://huggingface.co/datasets/OctoMed/MedXpertQA-Text,downloaded
+huzaifa525/Medical_Intelligence_Dataset_76k_2026_Edition,data/derived/medical_intelligence_76k/huzaifa525__Medical_Intelligence_Dataset_76k_2026_Edition.jsonl,76000,https://huggingface.co/datasets/huzaifa525/Medical_Intelligence_Dataset_76k_2026_Edition,downloaded
+nuhmanpk/firstaid-treatment-instruct,data/derived/firstaid_treatment_instruct/nuhmanpk__firstaid-treatment-instruct.jsonl,71037,https://huggingface.co/datasets/nuhmanpk/firstaid-treatment-instruct,downloaded
+BirdieByte1024/stage1-doctor-patient-chat,data/derived/stage1_doctor_patient_chat/BirdieByte1024__stage1-doctor-patient-chat.jsonl,482,https://huggingface.co/datasets/BirdieByte1024/stage1-doctor-patient-chat,downloaded

@@ -573,3 +573,33 @@ Columns to capture:
 - Why it is useful for SFT: expert-level medical reasoning with clean answer keys
 - Download status: downloaded
 - Notes: text-only test split looks mirrorable and high-signal; mirrored 2,450 rows.
+
+## 2026-05-26 - huzaifa525/Medical_Intelligence_Dataset_76k_2026_Edition
+- Domain: medical intelligence QA
+- Source: https://huggingface.co/datasets/huzaifa525/Medical_Intelligence_Dataset_76k_2026_Edition
+- License / access constraints: public repo
+- Size: 76k rows
+- Format: input-output QA
+- Why it is useful for SFT: large, clean instruction/answer set with medical knowledge coverage
+- Download status: identified
+- Notes: looks straightforward to mirror and should fit the current corpus shape well.
+
+## 2026-05-26 - nuhmanpk/firstaid-treatment-instruct
+- Domain: medical first-aid instruction
+- Source: https://huggingface.co/datasets/nuhmanpk/firstaid-treatment-instruct
+- License / access constraints: public repo
+- Size: 71k rows
+- Format: system-user-assistant messages
+- Why it is useful for SFT: adds concise medical instruction-following examples grounded in source passages
+- Download status: downloaded
+- Notes: seems built for instruction tuning; likely okay as a text-heavy adjunct source; mirrored 71,037 train rows.
+
+## 2026-05-26 - BirdieByte1024/stage1-doctor-patient-chat
+- Domain: medical doctor-patient chat
+- Source: https://huggingface.co/datasets/BirdieByte1024/stage1-doctor-patient-chat
+- License / access constraints: public repo
+- Size: 482 rows
+- Format: instruction-response chat
+- Why it is useful for SFT: compact realistic doctor-patient phrasing with prompt/response style
+- Download status: downloaded
+- Notes: small but clean chat source that normalized without drama; mirrored 482 rows.

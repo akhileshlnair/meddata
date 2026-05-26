@@ -171,6 +171,16 @@ def normalize_row(dataset_name: str, row: dict[str, Any]) -> dict[str, Any]:
                 record[key] = row[key]
         return record
 
+    if row.get("instruction") and row.get("output"):
+        record = {
+            "source_dataset": dataset_name,
+            "instruction": row["instruction"],
+            "answer": row["output"],
+        }
+        if row.get("input") not in (None, "", [], {}):
+            record["input"] = row["input"]
+        return record
+
     if row.get("raw_text_content"):
         return {"source_dataset": dataset_name, "text": row["raw_text_content"], "raw": row}
 

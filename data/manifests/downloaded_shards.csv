@@ -24,4 +24,4 @@ openmed-community/MedReason-Stenographic,data/derived/medreason_stenographic/ope
 General-Medical-AI/GMAI-Reasoning10K,data/derived/gmai_reasoning10k/General-Medical-AI__GMAI-Reasoning10K.jsonl,7004,https://huggingface.co/datasets/General-Medical-AI/GMAI-Reasoning10K,downloaded
 lavita/MedQuAD,data/derived/medquad/lavita__MedQuAD.jsonl,47441,https://huggingface.co/datasets/lavita/MedQuAD,downloaded
 DataFog/medical-transcription-instruct,data/derived/datafog_medical_transcription_instruct/DataFog__medical-transcription-instruct.jsonl,38924,https://huggingface.co/datasets/DataFog/medical-transcription-instruct,downloaded
-swj0419/qa-pairs-mvd-10k_split1,data/derived/mvd_qapairs_10k_split1/swj0419__qa-pairs-mvd-10k_split1.jsonl,17158,https://huggingface.co/datasets/swj0419/qa-pairs-mvd-10k_split1,downloaded
+ZhexiLu/healthcaremagic-100k,data/derived/healthcaremagic_100k/ZhexiLu__healthcaremagic-100k.jsonl,89732,https://huggingface.co/datasets/ZhexiLu/healthcaremagic-100k,downloaded

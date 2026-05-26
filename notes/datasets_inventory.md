@@ -463,3 +463,13 @@ Columns to capture:
 - Why it is useful for SFT: can be converted into grounded medication-QA and response-selection supervision
 - Download status: identified
 - Notes: not pure QA, but likely useful as a small supervised pairwise data source.
+
+## 2026-05-26 - ZhexiLu/healthcaremagic-100k
+- Domain: medical instruction QA
+- Source: https://huggingface.co/datasets/ZhexiLu/healthcaremagic-100k
+- License / access constraints: public repo
+- Size: 100k rows
+- Format: instruction-input-output
+- Why it is useful for SFT: direct medical instruction following with patient descriptions and doctor-style answers
+- Download status: identified
+- Notes: a strong compact open set if we cap the mirror to keep within disk budget.

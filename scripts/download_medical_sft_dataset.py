@@ -21,6 +21,25 @@ def first_present(row: dict[str, Any], keys: tuple[str, ...]) -> Any:
 
 
 def normalize_row(dataset_name: str, row: dict[str, Any]) -> dict[str, Any]:
+    if row.get("sent1") and row.get("sent2") and row.get("ending0") is not None:
+        choices = [row.get(f"ending{i}") for i in range(5) if row.get(f"ending{i}") is not None]
+        label = row.get("label")
+        answer = None
+        if isinstance(label, int) and 0 <= label < len(choices):
+            answer = choices[label]
+        record = {
+            "source_dataset": dataset_name,
+            "question": f"{row['sent1']} {row['sent2']}",
+            "choices": choices,
+        }
+        if answer is not None:
+            record["answer"] = answer
+        if row.get("id") not in (None, "", [], {}):
+            record["id"] = row["id"]
+        if row.get("startphrase") not in (None, "", [], {}):
+            record["startphrase"] = row["startphrase"]
+        return record
+
     if row.get("question") and row.get("correct_answer"):
         record = {
             "source_dataset": dataset_name,

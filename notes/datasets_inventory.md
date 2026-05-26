@@ -503,3 +503,13 @@ Columns to capture:
 - Why it is useful for SFT: compact instruction-following medical chat examples
 - Download status: identified
 - Notes: small, but useful for chat behavior and formatting diversity.
+
+## 2026-05-26 - lavita/medical-qa-shared-task-v1-toy
+- Domain: medical multiple-choice QA
+- Source: https://huggingface.co/datasets/lavita/medical-qa-shared-task-v1-toy
+- License / access constraints: public repo
+- Size: 64 rows
+- Format: medical MCQ
+- Why it is useful for SFT: tiny but clean multiple-choice practice data
+- Download status: identified
+- Notes: very small, but easy to fit and useful as an answer-selection seed.

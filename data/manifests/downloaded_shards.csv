@@ -28,3 +28,4 @@ ZhexiLu/healthcaremagic-100k,data/derived/healthcaremagic_100k/ZhexiLu__healthca
 OpenMedical/medical-data,data/derived/openmedical_medical_data/OpenMedical__medical-data.jsonl,20363,https://huggingface.co/datasets/OpenMedical/medical-data,downloaded
 FunDialogues/healthcare-minor-consultation,data/derived/fundialogues_healthcare_minor_consultation/FunDialogues__healthcare-minor-consultation.jsonl,100,https://huggingface.co/datasets/FunDialogues/healthcare-minor-consultation,downloaded
 Kabatubare/medical-guanaco-3000,data/derived/medical_guanaco_3000/Kabatubare__medical-guanaco-3000.jsonl,3000,https://huggingface.co/datasets/Kabatubare/medical-guanaco-3000,downloaded
+lavita/medical-qa-shared-task-v1-toy,data/derived/medical_qa_shared_task_v1_toy/lavita__medical-qa-shared-task-v1-toy.jsonl,32,https://huggingface.co/datasets/lavita/medical-qa-shared-task-v1-toy,downloaded

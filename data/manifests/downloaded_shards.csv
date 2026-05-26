@@ -25,3 +25,4 @@ General-Medical-AI/GMAI-Reasoning10K,data/derived/gmai_reasoning10k/General-Medi
 lavita/MedQuAD,data/derived/medquad/lavita__MedQuAD.jsonl,47441,https://huggingface.co/datasets/lavita/MedQuAD,downloaded
 DataFog/medical-transcription-instruct,data/derived/datafog_medical_transcription_instruct/DataFog__medical-transcription-instruct.jsonl,38924,https://huggingface.co/datasets/DataFog/medical-transcription-instruct,downloaded
 ZhexiLu/healthcaremagic-100k,data/derived/healthcaremagic_100k/ZhexiLu__healthcaremagic-100k.jsonl,89732,https://huggingface.co/datasets/ZhexiLu/healthcaremagic-100k,downloaded
+OpenMedical/medical-data,data/derived/openmedical_medical_data/OpenMedical__medical-data.jsonl,20363,https://huggingface.co/datasets/OpenMedical/medical-data,downloaded

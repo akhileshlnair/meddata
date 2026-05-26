@@ -42,3 +42,6 @@ lavita/MedQuAD,medical QA,https://huggingface.co/datasets/lavita/MedQuAD,public 
 DataFog/medical-transcription-instruct,medical transcription instruction,https://huggingface.co/datasets/DataFog/medical-transcription-instruct,public repo,38,924 rows,instruction-output transcription,high,identified,2
 swj0419/qa-pairs-mvd-10k_split1,medical medication QA,https://huggingface.co/datasets/swj0419/qa-pairs-mvd-10k_split1,public repo,10k rows,question pair label,medium,identified,2
 ZhexiLu/healthcaremagic-100k,medical instruction QA,https://huggingface.co/datasets/ZhexiLu/healthcaremagic-100k,public repo,100k rows,instruction-input-output,high,identified,2
+OpenMedical/medical-data,medical exam QA,https://huggingface.co/datasets/OpenMedical/medical-data,public repo,10K-100K rows,multiple choice QA,high,identified,2
+FunDialogues/healthcare-minor-consultation,medical consultation dialogue,https://huggingface.co/datasets/FunDialogues/healthcare-minor-consultation,public repo,100 rows,doctor-patient dialogue,medium,identified,2
+Kabatubare/medical-guanaco-3000,medical assistant instruction,https://huggingface.co/datasets/Kabatubare/medical-guanaco-3000,public repo,3k rows,human-assistant chat,high,identified,2

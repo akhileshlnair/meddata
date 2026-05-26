@@ -473,3 +473,33 @@ Columns to capture:
 - Why it is useful for SFT: direct medical instruction following with patient descriptions and doctor-style answers
 - Download status: identified
 - Notes: a strong compact open set if we cap the mirror to keep within disk budget.
+
+## 2026-05-26 - OpenMedical/medical-data
+- Domain: medical exam QA
+- Source: https://huggingface.co/datasets/OpenMedical/medical-data
+- License / access constraints: public repo
+- Size: 10K-100K rows
+- Format: multiple choice QA
+- Why it is useful for SFT: MCQ style medical reasoning and answer selection
+- Download status: identified
+- Notes: good compact benchmark-style supervision if the mirror size stays modest.
+
+## 2026-05-26 - FunDialogues/healthcare-minor-consultation
+- Domain: medical consultation dialogue
+- Source: https://huggingface.co/datasets/FunDialogues/healthcare-minor-consultation
+- License / access constraints: public repo
+- Size: 100 rows
+- Format: doctor-patient dialogue
+- Why it is useful for SFT: tiny but clean conversational healthcare examples
+- Download status: identified
+- Notes: not large, but useful as a dialogue-format seed.
+
+## 2026-05-26 - Kabatubare/medical-guanaco-3000
+- Domain: medical assistant instruction
+- Source: https://huggingface.co/datasets/Kabatubare/medical-guanaco-3000
+- License / access constraints: public repo
+- Size: 3k rows
+- Format: human-assistant chat
+- Why it is useful for SFT: compact instruction-following medical chat examples
+- Download status: identified
+- Notes: small, but useful for chat behavior and formatting diversity.

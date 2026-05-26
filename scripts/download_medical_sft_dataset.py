@@ -21,6 +21,16 @@ def first_present(row: dict[str, Any], keys: tuple[str, ...]) -> Any:
 
 
 def normalize_row(dataset_name: str, row: dict[str, Any]) -> dict[str, Any]:
+    if row.get("question") and row.get("correct_answer"):
+        record = {
+            "source_dataset": dataset_name,
+            "question": row["question"],
+            "answer": row["correct_answer"],
+        }
+        if row.get("correct_option") not in (None, "", [], {}):
+            record["correct_option"] = row["correct_option"]
+        return record
+
     if row.get("prompt") and (row.get("completion") or row.get("answer_idx")):
         record = {
             "source_dataset": dataset_name,
@@ -81,6 +91,36 @@ def normalize_row(dataset_name: str, row: dict[str, Any]) -> dict[str, Any]:
         if row.get("id") not in (None, "", [], {}):
             record["id"] = row["id"]
         return record
+
+    if row.get("dialogue"):
+        messages: list[dict[str, Any]] = []
+        current_role = None
+        buffer: list[str] = []
+        for raw_line in str(row["dialogue"]).splitlines():
+            line = raw_line.strip()
+            if not line:
+                continue
+            if line.startswith("Patient:"):
+                if current_role and buffer:
+                    messages.append({"role": current_role, "content": " ".join(buffer).strip()})
+                current_role = "user"
+                buffer = [line[len("Patient:"):].strip()]
+            elif line.startswith("Doctor:"):
+                if current_role and buffer:
+                    messages.append({"role": current_role, "content": " ".join(buffer).strip()})
+                current_role = "assistant"
+                buffer = [line[len("Doctor:"):].strip()]
+            else:
+                buffer.append(line)
+        if current_role and buffer:
+            messages.append({"role": current_role, "content": " ".join(buffer).strip()})
+        if messages:
+            record: dict[str, Any] = {"source_dataset": dataset_name, "messages": messages}
+            if row.get("description") not in (None, "", [], {}):
+                record["description"] = row["description"]
+            if row.get("id") not in (None, "", [], {}):
+                record["id"] = row["id"]
+            return record
 
     if row.get("query") and (row.get("answer") or row.get("thinking") or row.get("reasoning")):
         record = {
@@ -180,6 +220,23 @@ def normalize_row(dataset_name: str, row: dict[str, Any]) -> dict[str, Any]:
         if row.get("input") not in (None, "", [], {}):
             record["input"] = row["input"]
         return record
+
+    if isinstance(row.get("text"), str) and "### Human:" in row["text"] and "### Assistant:" in row["text"]:
+        text = row["text"]
+        human_marker = "### Human:"
+        assistant_marker = "### Assistant:"
+        human_start = text.find(human_marker)
+        assistant_start = text.find(assistant_marker)
+        if human_start != -1 and assistant_start != -1 and assistant_start > human_start:
+            user_text = text[human_start + len(human_marker):assistant_start].strip()
+            assistant_text = text[assistant_start + len(assistant_marker):].strip()
+            return {
+                "source_dataset": dataset_name,
+                "messages": [
+                    {"role": "user", "content": user_text},
+                    {"role": "assistant", "content": assistant_text},
+                ],
+            }
 
     if row.get("raw_text_content"):
         return {"source_dataset": dataset_name, "text": row["raw_text_content"], "raw": row}

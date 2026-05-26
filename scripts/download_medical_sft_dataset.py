@@ -66,6 +66,53 @@ def normalize_row(dataset_name: str, row: dict[str, Any]) -> dict[str, Any]:
             record["question_id_specific"] = row["question_id_specific"]
         return record
 
+    answer_keys = ("answer_a", "answer_b", "answer_c", "answer_d", "answer_e")
+    if row.get("clinical_case") and row.get("question") and any(row.get(key) not in (None, "", [], {}) for key in answer_keys):
+        choices = [row[key] for key in answer_keys if row.get(key) not in (None, "", [], {})]
+        correct = row.get("correct_answers")
+        answer = None
+        if isinstance(correct, str) and correct:
+            correct_letters = [part.strip().upper() for part in correct.replace(",", " ").split() if part.strip()]
+            correct_texts = []
+            for letter in correct_letters:
+                idx = ord(letter[0]) - ord("A")
+                if 0 <= idx < len(choices):
+                    correct_texts.append(choices[idx])
+            if correct_texts:
+                answer = "\n".join(correct_texts)
+        record = {
+            "source_dataset": dataset_name,
+            "instruction": f"{row['clinical_case']}\n\nQuestion: {row['question']}",
+            "choices": choices,
+        }
+        if answer not in (None, "", [], {}):
+            record["answer"] = answer
+        if row.get("task") not in (None, "", [], {}):
+            record["task"] = row["task"]
+        if row.get("medical_subject") not in (None, "", [], {}):
+            record["medical_subject"] = row["medical_subject"]
+        if row.get("question_type") not in (None, "", [], {}):
+            record["question_type"] = row["question_type"]
+        if row.get("id") not in (None, "", [], {}):
+            record["id"] = row["id"]
+        return record
+
+    if row.get("clinical_case") and row.get("question") and row.get("answer") not in (None, "", [], {}):
+        record = {
+            "source_dataset": dataset_name,
+            "instruction": f"{row['clinical_case']}\n\nQuestion: {row['question']}",
+            "answer": row["answer"],
+        }
+        if row.get("cc_question_number") not in (None, "", [], {}):
+            record["cc_question_number"] = row["cc_question_number"]
+        if row.get("medical_subject") not in (None, "", [], {}):
+            record["medical_subject"] = row["medical_subject"]
+        if row.get("question_type") not in (None, "", [], {}):
+            record["question_type"] = row["question_type"]
+        if row.get("id") not in (None, "", [], {}):
+            record["id"] = row["id"]
+        return record
+
     if row.get("dataset_info") and row.get("conversations"):
         for convo in row["conversations"]:
             dialogue = convo.get("dialogue") or []

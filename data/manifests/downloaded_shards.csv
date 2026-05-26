@@ -37,3 +37,6 @@ OctoMed/MedXpertQA-Text,data/derived/medxpertqa_text/OctoMed__MedXpertQA-Text.js
 huzaifa525/Medical_Intelligence_Dataset_76k_2026_Edition,data/derived/medical_intelligence_76k/huzaifa525__Medical_Intelligence_Dataset_76k_2026_Edition.jsonl,76000,https://huggingface.co/datasets/huzaifa525/Medical_Intelligence_Dataset_76k_2026_Edition,downloaded
 nuhmanpk/firstaid-treatment-instruct,data/derived/firstaid_treatment_instruct/nuhmanpk__firstaid-treatment-instruct.jsonl,71037,https://huggingface.co/datasets/nuhmanpk/firstaid-treatment-instruct,downloaded
 BirdieByte1024/stage1-doctor-patient-chat,data/derived/stage1_doctor_patient_chat/BirdieByte1024__stage1-doctor-patient-chat.jsonl,482,https://huggingface.co/datasets/BirdieByte1024/stage1-doctor-patient-chat,downloaded
+ANR-MALADES/MediQAl,data/derived/mediqal_mcqu/ANR-MALADES__MediQAl.jsonl,10000,https://huggingface.co/datasets/ANR-MALADES/MediQAl,downloaded
+ANR-MALADES/MediQAl:mcqm,data/derived/mediqal_mcqm/ANR-MALADES__MediQAl.jsonl,5767,https://huggingface.co/datasets/ANR-MALADES/MediQAl,downloaded
+ANR-MALADES/MediQAl:oeq,data/derived/mediqal_oeq/ANR-MALADES__MediQAl.jsonl,4969,https://huggingface.co/datasets/ANR-MALADES/MediQAl,downloaded

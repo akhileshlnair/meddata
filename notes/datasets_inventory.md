@@ -603,3 +603,13 @@ Columns to capture:
 - Why it is useful for SFT: compact realistic doctor-patient phrasing with prompt/response style
 - Download status: downloaded
 - Notes: small but clean chat source that normalized without drama; mirrored 482 rows.
+
+## 2026-05-26 - ANR-MALADES/MediQAl
+- Domain: medical clinical multiple-choice QA
+- Source: https://huggingface.co/datasets/ANR-MALADES/MediQAl
+- License / access constraints: public repo
+- Size: 10k+ rows
+- Format: multiple choice QA
+- Why it is useful for SFT: larger clinical case QA set with answer-key supervision
+- Download status: downloaded
+- Notes: MCQ config (`mcqu`) is the promising one for SFT; likely the best open medical choice among the current candidates; mirrored 10,000 `mcqu` train rows plus 5,767 `mcqm` train rows and 4,969 `oeq` test rows.

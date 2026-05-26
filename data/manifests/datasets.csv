@@ -55,3 +55,4 @@ OctoMed/MedXpertQA-Text,expert medical reasoning QA,https://huggingface.co/datas
 huzaifa525/Medical_Intelligence_Dataset_76k_2026_Edition,medical intelligence QA,https://huggingface.co/datasets/huzaifa525/Medical_Intelligence_Dataset_76k_2026_Edition,public repo,76k rows,input-output QA,high,identified,2
 nuhmanpk/firstaid-treatment-instruct,medical first-aid instruction,https://huggingface.co/datasets/nuhmanpk/firstaid-treatment-instruct,public repo,71k rows,system-user-assistant messages,medium,identified,2
 BirdieByte1024/stage1-doctor-patient-chat,medical doctor-patient chat,https://huggingface.co/datasets/BirdieByte1024/stage1-doctor-patient-chat,public repo,482 rows,instruction-response chat,medium,identified,2
+ANR-MALADES/MediQAl,medical clinical multiple-choice QA,https://huggingface.co/datasets/ANR-MALADES/MediQAl,public repo,10k+ rows,multiple choice QA,high,identified,2

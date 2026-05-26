@@ -1,0 +1,13 @@
+.DS_Store
+data/raw/
+data/cache/
+data/tmp/
+*.sqlite
+*.db
+*.tar
+*.tar.gz
+*.zip
+*.zst
+*.parquet
+*.jsonl.gz
+

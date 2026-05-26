@@ -31,3 +31,4 @@ Kabatubare/medical-guanaco-3000,data/derived/medical_guanaco_3000/Kabatubare__me
 lavita/medical-qa-shared-task-v1-toy,data/derived/medical_qa_shared_task_v1_toy/lavita__medical-qa-shared-task-v1-toy.jsonl,32,https://huggingface.co/datasets/lavita/medical-qa-shared-task-v1-toy,downloaded
 Starlord1010/Medical-QA-dataset,data/derived/starlord_medical_qa/Starlord1010__Medical-QA-dataset.jsonl,5000,https://huggingface.co/datasets/Starlord1010/Medical-QA-dataset,downloaded
 alwaysfurther/deepfabric-7k-medical-multi-turn-conversation,data/derived/deepfabric_medical_multi_turn/alwaysfurther__deepfabric-7k-medical-multi-turn-conversation.jsonl,7570,https://huggingface.co/datasets/alwaysfurther/deepfabric-7k-medical-multi-turn-conversation,downloaded
+HiTZ/MedExpQA,data/derived/medexpqa_en/HiTZ__MedExpQA.jsonl,434,https://huggingface.co/datasets/HiTZ/MedExpQA,downloaded

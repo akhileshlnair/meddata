@@ -551,5 +551,5 @@ Columns to capture:
 - Size: explanation QA dataset
 - Format: question-answer with explanations
 - Why it is useful for SFT: strong reasoning-and-explanation supervision
-- Download status: identified
-- Notes: especially useful if the explanation field remains clean after normalization.
+- Download status: downloaded
+- Notes: especially useful if the explanation field remains clean after normalization; mirrored 434 English train rows.

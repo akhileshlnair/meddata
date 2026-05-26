@@ -44,7 +44,7 @@
 - Added a reusable medical SFT downloader to normalize messages, QA pairs, and raw text fallbacks.
 - Updated the corpus inventory and manifests to track these sources explicitly.
 - Live snapshot while downloads are running:
-  - Current derived corpus total: 10,908,604 lines
+  - Current derived corpus total: 10,909,038 lines
   - II-Medical reasoning mirror: 1,395,743 lines written so far
   - ReasonMed mirror: 1,111,555 lines written so far
   - medra-medical-thinking mirror: 2,777,504 lines written so far
@@ -65,3 +65,4 @@
   - Medical QA shared-task toy: 32 lines written so far
   - Starlord medical QA dataset: 5,000 lines written so far
   - Deepfabric 7k medical multi-turn conversation: 7,570 lines written so far
+  - MedExpQA mirror: 434 lines written so far

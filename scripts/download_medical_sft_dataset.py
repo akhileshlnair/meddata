@@ -22,13 +22,25 @@ def first_present(row: dict[str, Any], keys: tuple[str, ...]) -> Any:
 
 def normalize_row(dataset_name: str, row: dict[str, Any]) -> dict[str, Any]:
     if row.get("full_question") and row.get("options"):
-        choices = []
+        choices: list[Any] = []
         if isinstance(row["options"], dict):
-            for key in sorted(row["options"].keys()):
-                choices.append(row["options"][key])
+            for key in sorted(row["options"].keys(), key=lambda item: int(item) if str(item).isdigit() else str(item)):
+                value = row["options"][key]
+                if value not in (None, "", [], {}):
+                    choices.append(value)
         answer = row.get("correct_option")
+        answer_key = str(answer) if answer not in (None, "", [], {}) else None
+        if answer_key and isinstance(row["options"], dict):
+            answer_value = row["options"].get(answer_key)
+            if answer_value not in (None, "", [], {}):
+                answer = answer_value
         if isinstance(answer, int):
-            answer = choices[answer - 1] if 1 <= answer <= len(choices) else answer
+            if isinstance(row["options"], dict):
+                mapped_answer = row["options"].get(str(answer))
+                if mapped_answer not in (None, "", [], {}):
+                    answer = mapped_answer
+            if answer in (None, "", [], {}):
+                answer = choices[answer - 1] if 1 <= answer <= len(choices) else answer
         record = {
             "source_dataset": dataset_name,
             "question": row["full_question"],
@@ -38,12 +50,20 @@ def normalize_row(dataset_name: str, row: dict[str, Any]) -> dict[str, Any]:
             record["answer"] = answer
         if row.get("full_answer") not in (None, "", [], {}):
             record["full_answer"] = row["full_answer"]
+        if row.get("full_answer_no_ref") not in (None, "", [], {}):
+            record["full_answer_no_ref"] = row["full_answer_no_ref"]
+        if answer_key and isinstance(row.get("explanations"), dict):
+            explanation = row["explanations"].get(answer_key)
+            if isinstance(explanation, dict) and explanation.get("text") not in (None, "", [], {}):
+                record["explanation"] = explanation["text"]
         if row.get("type") not in (None, "", [], {}):
             record["type"] = row["type"]
         if row.get("year") not in (None, "", [], {}):
             record["year"] = row["year"]
         if row.get("lang") not in (None, "", [], {}):
             record["lang"] = row["lang"]
+        if row.get("question_id_specific") not in (None, "", [], {}):
+            record["question_id_specific"] = row["question_id_specific"]
         return record
 
     if row.get("dataset_info") and row.get("conversations"):

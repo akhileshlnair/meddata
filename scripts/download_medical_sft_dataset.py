@@ -20,6 +20,17 @@ def first_present(row: dict[str, Any], keys: tuple[str, ...]) -> Any:
     return None
 
 
+def infer_data_format(data_files: list[str]) -> str:
+    suffixes = {Path(path).suffix.lower() for path in data_files}
+    if suffixes <= {".json", ".jsonl", ".ndjson"}:
+        return "json"
+    if suffixes <= {".parquet"}:
+        return "parquet"
+    if suffixes <= {".arrow"}:
+        return "arrow"
+    raise ValueError(f"Unsupported local data file format(s): {sorted(suffixes)}")
+
+
 def normalize_row(dataset_name: str, row: dict[str, Any]) -> dict[str, Any]:
     if row.get("full_question") and row.get("options"):
         choices: list[Any] = []
@@ -517,7 +528,9 @@ def main() -> None:
 
     if args.data_files:
         data_files = args.data_files[0] if len(args.data_files) == 1 else args.data_files
-        stream = load_dataset("json", data_files=data_files, split=args.split, streaming=True)
+        data_format = infer_data_format(args.data_files)
+        use_streaming = data_format == "json"
+        stream = load_dataset(data_format, data_files=data_files, split=args.split, streaming=use_streaming)
     elif args.config:
         stream = load_dataset(args.dataset, args.config, split=args.split, streaming=True)
     else:

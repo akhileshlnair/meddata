@@ -361,8 +361,8 @@ Columns to capture:
 - Size: 177,703 rows
 - Format: question-answer
 - Why it is useful for SFT: cleaned and rewritten Chinese medical QA with decent quality control
-- Download status: identified
-- Notes: smaller than the reasoning mega-sets, but still useful and high signal.
+- Download status: downloaded
+- Notes: smaller than the reasoning mega-sets, but still useful and high signal; mirrored locally as 177,703 rows.
 
 ## 2026-05-26 - miriad/miriad-5.8M
 - Domain: medical query-response

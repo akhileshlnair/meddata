@@ -29,7 +29,7 @@ OpenMed/Medical-Reasoning-SFT-Mega,medical reasoning SFT,https://huggingface.co/
 Intelligent-Internet/II-Medical-Reasoning-SFT,medical reasoning SFT,https://huggingface.co/datasets/Intelligent-Internet/II-Medical-Reasoning-SFT,public repo,2.2M rows,text generation / QA,very high,identified,1
 drwlf/medra-medical-thinking,medical reasoning and thinking traces,https://huggingface.co/datasets/drwlf/medra-medical-thinking,public repo,2.78M rows,conversational messages,very high,identified,1
 lingshu-medical-mllm/ReasonMed,medical reasoning SFT,https://huggingface.co/datasets/lingshu-medical-mllm/ReasonMed,public repo,1.11M rows,reasoned QA / CoT,very high,identified,1
-FreedomIntelligence/Huatuo26M-Lite,Chinese medical QA,https://huggingface.co/datasets/FreedomIntelligence/Huatuo26M-Lite,public repo,177k rows,question-answer,high,identified,2
+FreedomIntelligence/Huatuo26M-Lite,Chinese medical QA,https://huggingface.co/datasets/FreedomIntelligence/Huatuo26M-Lite,public repo,177k rows,question-answer,high,downloaded,2
 miriad/miriad-5.8M,medical query-response,https://huggingface.co/datasets/miriad/miriad-5.8M,public repo,5.8M rows,text QA with passage context,very high,identified,1
 FreedomIntelligence/huatuo_encyclopedia_qa,Chinese medical QA,https://huggingface.co/datasets/FreedomIntelligence/huatuo_encyclopedia_qa,public repo,362k rows,question-answer,high,identified,2
 meditron-fo-anon/fully-open-meditron,medical reasoning SFT,https://huggingface.co/datasets/meditron-fo-anon/fully-open-meditron,public repo,601k rows,curated messages,very high,identified,1

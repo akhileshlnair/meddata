@@ -44,10 +44,11 @@
 - Added a reusable medical SFT downloader to normalize messages, QA pairs, and raw text fallbacks.
 - Updated the corpus inventory and manifests to track these sources explicitly.
 - Live snapshot while downloads are running:
-  - Current derived corpus total: 11,269,191 lines
+  - Current derived corpus total: 11,446,894 lines
   - II-Medical reasoning mirror: 1,395,743 lines written so far
   - ReasonMed mirror: 1,111,555 lines written so far
   - medra-medical-thinking mirror: 2,777,504 lines written so far
+  - Huatuo26M-Lite mirror: 177,703 lines written so far
   - MIRIAD mirror: 1,000,000 lines written so far
   - Huatuo encyclopedia QA mirror: 362,420 lines written so far
   - Fully Open Meditron mirror: 601,346 lines written so far
@@ -83,3 +84,5 @@
   - OpenMedical medical-raw medbullets_5op mirror: 308 lines written so far
   - OpenMedical medical-raw medexqa mirror: 965 lines written so far
   - OpenMedical m1-stage1 medical reasoning limo-correct mirror: 1,617 lines written so far
+- Huatuo26M-Lite mirror: 177,703 lines written so far
+- Current derived corpus total: 11,446,894 lines.

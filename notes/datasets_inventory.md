@@ -752,7 +752,7 @@ Columns to capture:
 - Format: instruction-input-output
 - Why it is useful for SFT: large, direct medical QA instruction corpus
 - Download status: downloaded
-- Notes: `all_train` looks like the best split to mirror for SFT purposes; mirrored 72,455 rows.
+- Notes: `all_train` and `all_validation` are both clean instruction-output shards; mirrored 72,455 train rows and 7,900 validation rows.
 
 ## 2026-05-26 - OpenMedical/m1-stage1-medical-reasoning:limo-correct
 - Domain: medical reasoning SFT

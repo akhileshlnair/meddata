@@ -58,3 +58,7 @@ BirdieByte1024/stage1-doctor-patient-chat,medical doctor-patient chat,https://hu
 ANR-MALADES/MediQAl,medical clinical multiple-choice QA,https://huggingface.co/datasets/ANR-MALADES/MediQAl,public repo,10k+ rows,multiple choice QA,high,identified,2
 OctoMed/MedQA-4options,medical ethics and clinical QA,https://huggingface.co/datasets/OctoMed/MedQA-4options,public repo,1.3k rows,four-option medical exam QA,high,identified,2
 raidium/ECN-QA,medical clinical reasoning exam QA,https://huggingface.co/datasets/raidium/ECN-QA,public repo,648 rows,clinical proposition QA,high,identified,2
+Fadil369/medical-o1-reasoning-SFT:en,medical reasoning SFT,https://huggingface.co/datasets/Fadil369/medical-o1-reasoning-SFT,public repo,19.7k rows,question-chain-of-thought-answer,very high,identified,1
+Fadil369/medical-o1-reasoning-SFT:en_mix,medical reasoning SFT,https://huggingface.co/datasets/Fadil369/medical-o1-reasoning-SFT,public repo,24.9k rows,question-chain-of-thought-answer,very high,identified,1
+Fadil369/medical-o1-reasoning-SFT:zh,medical reasoning SFT,https://huggingface.co/datasets/Fadil369/medical-o1-reasoning-SFT,public repo,20.2k rows,question-chain-of-thought-answer,very high,identified,1
+Fadil369/medical-o1-reasoning-SFT:zh_mix,medical reasoning SFT,https://huggingface.co/datasets/Fadil369/medical-o1-reasoning-SFT,public repo,25.4k rows,question-chain-of-thought-answer,very high,identified,1

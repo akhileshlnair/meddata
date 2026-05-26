@@ -633,3 +633,43 @@ Columns to capture:
 - Why it is useful for SFT: reasoning-focused proposition selection with correct-answer markers
 - Download status: downloaded
 - Notes: bilingual exam-style set; English config looks usable and the proposition structure is rich enough to preserve; mirrored 648 English rows.
+
+## 2026-05-26 - Fadil369/medical-o1-reasoning-SFT:en
+- Domain: medical reasoning SFT
+- Source: https://huggingface.co/datasets/Fadil369/medical-o1-reasoning-SFT
+- License / access constraints: public repo
+- Size: 19.7k rows
+- Format: question-chain-of-thought-answer
+- Why it is useful for SFT: strong English medical reasoning with concise answers and stepwise reasoning
+- Download status: downloaded
+- Notes: clean `Question` / `Complex_CoT` / `Response` schema; mirrored 19,704 rows.
+
+## 2026-05-26 - Fadil369/medical-o1-reasoning-SFT:en_mix
+- Domain: medical reasoning SFT
+- Source: https://huggingface.co/datasets/Fadil369/medical-o1-reasoning-SFT
+- License / access constraints: public repo
+- Size: 24.9k rows
+- Format: question-chain-of-thought-answer
+- Why it is useful for SFT: larger English-mixed reasoning slice with the same clean schema
+- Download status: downloaded
+- Notes: clean `Question` / `Complex_CoT` / `Response` schema; mirrored 24,887 rows.
+
+## 2026-05-26 - Fadil369/medical-o1-reasoning-SFT:zh
+- Domain: medical reasoning SFT
+- Source: https://huggingface.co/datasets/Fadil369/medical-o1-reasoning-SFT
+- License / access constraints: public repo
+- Size: 20.2k rows
+- Format: question-chain-of-thought-answer
+- Why it is useful for SFT: Chinese medical reasoning with high-quality rationales
+- Download status: identified
+- Notes: clean `Question` / `Complex_CoT` / `Response` schema.
+
+## 2026-05-26 - Fadil369/medical-o1-reasoning-SFT:zh_mix
+- Domain: medical reasoning SFT
+- Source: https://huggingface.co/datasets/Fadil369/medical-o1-reasoning-SFT
+- License / access constraints: public repo
+- Size: 25.4k rows
+- Format: question-chain-of-thought-answer
+- Why it is useful for SFT: larger Chinese-mixed reasoning slice with the same clean schema
+- Download status: identified
+- Notes: clean `Question` / `Complex_CoT` / `Response` schema.

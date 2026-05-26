@@ -721,5 +721,5 @@ Columns to capture:
 - Size: 72.5k rows
 - Format: instruction-input-output
 - Why it is useful for SFT: large, direct medical QA instruction corpus
-- Download status: identified
-- Notes: `all_train` looks like the best split to mirror for SFT purposes.
+- Download status: downloaded
+- Notes: `all_train` looks like the best split to mirror for SFT purposes; mirrored 72,455 rows.

@@ -21,6 +21,37 @@ def first_present(row: dict[str, Any], keys: tuple[str, ...]) -> Any:
 
 
 def normalize_row(dataset_name: str, row: dict[str, Any]) -> dict[str, Any]:
+    if row.get("dataset_info") and row.get("conversations"):
+        for convo in row["conversations"]:
+            dialogue = convo.get("dialogue") or []
+            messages: list[dict[str, Any]] = []
+            for item in dialogue:
+                role = item.get("role")
+                if role == "customer":
+                    mapped_role = "user"
+                elif role == "agent":
+                    mapped_role = "assistant"
+                else:
+                    mapped_role = role or "user"
+                text = item.get("text")
+                if text is None:
+                    continue
+                messages.append({"role": mapped_role, "content": text})
+            if messages:
+                record: dict[str, Any] = {
+                    "source_dataset": dataset_name,
+                    "messages": messages,
+                }
+                if convo.get("id") not in (None, "", [], {}):
+                    record["conversation_id"] = convo["id"]
+                if convo.get("domain") not in (None, "", [], {}):
+                    record["domain"] = convo["domain"]
+                if convo.get("problem") not in (None, "", [], {}):
+                    record["problem"] = convo["problem"]
+                if convo.get("customer_type") not in (None, "", [], {}):
+                    record["customer_type"] = convo["customer_type"]
+                return record
+
     if row.get("sent1") and row.get("sent2") and row.get("ending0") is not None:
         choices = [row.get(f"ending{i}") for i in range(5) if row.get(f"ending{i}") is not None]
         label = row.get("label")
@@ -87,6 +118,13 @@ def normalize_row(dataset_name: str, row: dict[str, Any]) -> dict[str, Any]:
             if row.get(key) not in (None, "", [], {}):
                 record[key] = row[key]
         return record
+
+    if row.get("question") and row.get("response"):
+        return {
+            "source_dataset": dataset_name,
+            "question": row["question"],
+            "answer": row["response"],
+        }
 
     if row.get("conversations"):
         messages: list[dict[str, Any]] = []

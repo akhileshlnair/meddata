@@ -513,3 +513,23 @@ Columns to capture:
 - Why it is useful for SFT: tiny but clean multiple-choice practice data
 - Download status: identified
 - Notes: very small, but easy to fit and useful as an answer-selection seed.
+
+## 2026-05-26 - ai-training-datasets/medical_helpdesk
+- Domain: medical helpdesk dialogue
+- Source: https://huggingface.co/datasets/ai-training-datasets/medical_helpdesk
+- License / access constraints: public repo
+- Size: 100 dialogues
+- Format: customer-agent dialogue
+- Why it is useful for SFT: adds helpdesk-style patient support behavior and conversational tone
+- Download status: identified
+- Notes: a tiny but useful dialogue-format addition.
+
+## 2026-05-26 - Starlord1010/Medical-QA-dataset
+- Domain: medical QA
+- Source: https://huggingface.co/datasets/Starlord1010/Medical-QA-dataset
+- License / access constraints: public repo
+- Size: 100K-1M rows
+- Format: question-response
+- Why it is useful for SFT: large-scale explanatory medical QA if it mirrors cleanly
+- Download status: identified
+- Notes: worth probing with a capped download if the size and disk budget permit.
